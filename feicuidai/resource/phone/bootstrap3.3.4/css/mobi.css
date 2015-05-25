@@ -1,0 +1,93 @@
+/*common*/
+body{
+    background: #f2f2f2;
+}
+.footer {
+    width: 100%;
+    height: 60px;
+    background: #21292b;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.footer .foot_item {
+    width: 25%;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+}
+.bg-default{
+    background: #fff;
+}
+/* reset */
+*{color:#ababab;padding:0;margin:0;}
+
+/* 轮播插件 */
+#myCarousel {
+    background: #fff;
+}
+/* index单行内容 */
+.per-icon{
+    width:8%;
+    float:left;
+    text-align: center;
+}
+.carousel .active{
+    background: #00cc99;
+}
+.per-content{
+    width:62%;
+    float:left;
+}
+.per-time{
+    width:30%;
+    float:left;
+    text-align:center;
+}
+.per-btn{
+    height:4.2em;
+    width:30%;
+    float:left;
+    text-align:center;
+}
+
+.list{
+    border-top:1px dotted #f2f2f2;
+    border-bottom:1px solid #e2e2e2;
+    line-height:3em;
+    vertical-align: middle;
+    height:3em;
+    cursor:pointer;
+    overflow: hidden;
+}
+.m-tips{ /* 溢出内容省略号  */
+    display:inline-block;
+    width:100%;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.m-list{
+    height:4.2em;
+    line-height:1.4em;
+    padding-top:8px;
+}
+.span2{color:#C0C0C0}
+
+
+/* btn btn-green */
+
+.btn-green{
+   background: #00cc99;
+    color: #d8f5eb;
+}
+.btn-green:hover{
+    background: #02d19e;
+    border-color:#cdcdcd;
+    color:#d8f5eb;
+}
+.btn-mid{
+    margin-top:3px;
+}

@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+         pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<div class="switch_content">
+    <div class="title_list">
+        <div class="this_li">
+            专家顾问团队
+            <div class="bg_00">
+                <img src="/resource/images/main_intex_title_bg.png" width="32"
+                     height="38" alt=""/>
+            </div>
+            <span>权威铸就信任，经验创造财富</span> <a href="/to/single_team-10-15.htm">更多+</a>
+        </div>
+
+    </div>
+    <div class="brand vertical all_box" id="vertical">
+        <a target="_blank" href="/to/static-10-15-team_list_01.htm" class="ent"><img src="/resource/images/index_1s.jpg"
+                                                                                     width="308" height="148">
+
+            <div class="info info_1"></div>
+        </a>
+        <a target="_blank" href="/to/static-10-15-team_list_02.htm" class="ent"><img src="/resource/images/index_2s.jpg"
+                                                                                     width="308" height="148">
+
+            <div class="info info_2"></div>
+        </a>
+        <a target="_blank" href="/to/static-10-15-team_list_03.htm" class="ent"><img src="/resource/images/index_3s.jpg"
+                                                                                     width="308" height="148">
+
+            <div class="info info_3"></div>
+        </a>
+
+        <div class="c"></div>
+    </div>
+
+
+    <script type="text/javascript">
+        //品牌翻转
+        $(function () {
+            var turn = function (target, time, opts) {
+                target.find('a').hover(function () {
+                    $(this).find('img').stop().animate(opts[0], time, function () {
+                        $(this).hide().next().show();
+                        $(this).next().animate(opts[1], time);
+                    });
+                }, function () {
+                    $(this).find('.info').animate(opts[0], time, function () {
+                        $(this).hide().prev().show();
+                        $(this).prev().animate(opts[1], time);
+                    });
+                });
+            };
+            var verticalOpts = [{'width': 0}, {'width': '308px'}];
+            turn($('#vertical'), 200, verticalOpts);
+            var horizontalOpts = [{'height': 0, 'top': '120px'}, {'height': '148px', 'top': 0}];
+            turn($('#horizontal'), 200, horizontalOpts);
+        });
+    </script>
+
+
+</div>

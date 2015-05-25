@@ -1,0 +1,187 @@
+*{ margin:0px; padding:0px;}
+
+.float-toolbars {
+	width: 55px;
+	position: fixed;
+	height: 180px;
+	right: 10px;
+	z-index: 1000;
+	bottom: 100px;
+	display: block;
+	padding:0px;
+
+}
+
+.float-toolbars li {
+	float: left;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	height: 55px;
+	width: 55px;
+	line-height: 17px;
+	cursor: pointer;
+	margin-bottom: 10px
+}
+
+.float-toolbars .user-feedback-con {
+	display: none;
+	cursor: auto;
+	text-align: left;
+	height: 171px;
+	width: 260px;
+	background: #fff;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+	position: absolute;
+	top: 0px;
+	right: 55px;
+	color: #333;
+}
+
+.float-toolbars .user-feedback-edit h2 {
+	font-size: 14px;
+	height: 16px;
+	line-height: 16px;
+	text-indent: 10px;
+	margin-top: 10px;
+}
+
+.float-toolbars .user-feedback-edit textarea {
+	background: none;
+	border: none;
+	border: 1px solid #dbdbdb;
+	background-color: #fff;
+
+	width: 232px;
+	height: 80px;
+	margin-top: 5px;
+	padding: 5px;
+	font-size: 12px;
+	resize: none;
+}
+
+.float-toolbars .user-feedback-edit .btn-style-1 {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.float-toolbars .user-feedback-succeed {
+	padding-top: 50px;
+	text-align: center;
+	height: 118px;
+}
+
+.float-toolbars .user-feedback-succeed {
+	font-size: 12px;
+	color: #666;
+}
+
+.float-toolbars .user-feedback-succeed strong {
+	font-size: 20px;
+	font-weight: normal;
+	color: #333;
+	line-height: 30px;
+}
+
+.float-toolbars .user-feedback-succeed a {
+	margin-top: 10px;
+	color: #1468ec;
+	margin-top: 20px;
+	display: block;
+}
+
+.float-toolbars .ft-user-updateLog a {
+	color: #fff;
+	text-decoration: none
+}
+
+.float-toolbars .btn-global-4 {
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.float-toolbars .float-toolbars-title {
+	display: block;
+	padding-top: 10px;
+	color: #fff;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	width:60px;
+	height:60px;
+}
+
+.float-toolbars .user-feedback .float-toolbars-title {
+	background:  url(../images/feedback-1.jpg) no-repeat;
+}
+
+.float-toolbars .user-feedback-1 .float-toolbars-title {
+	background: url(../images/feedback-0.png) no-repeat;
+}
+
+.float-toolbars .user-feedback-2 .float-toolbars-title {
+	background: url(../images/feedback-qq.png) no-repeat;
+}
+
+.float-toolbars .user-feedback-3 .float-toolbars-title {
+	background: url(../images/feedback-3.png) no-repeat;
+}
+
+.float-toolbars .user-feedback-4 .float-toolbars-title {
+	background: url(../images/feedback-4.jpg) no-repeat;
+}
+
+.float-toolbars .float-toolbars-title:hover,.float-toolbars .float-toolbars-title.cur {
+	background: none;
+	background-color:#009f00;
+	font-size: 14px;
+	line-height: 30px;
+	border-radius:5px;
+	height:60px;
+	width:60px;
+	padding:0px;
+}
+
+.float-toolbars .user-feedback-2 .float-toolbars-item-sub {
+	position: absolute;
+	left: -132px;
+	top: 65px;
+	width: 130px;
+	display: none;
+	font-size: 12px;
+	border: 1px solid #BCBCBC;
+	color: #777;
+	background: #F7F7F7;
+	color: #777;
+	border: 1px solid #BCBCBC;
+}
+
+.float-toolbars .user-feedback-2 .float-toolbars-item-sub div {
+	padding: 5px 0; 
+	border-bottom: solid 1px #E6E4E4;
+	
+}
+
+.float-toolbars .user-feedback-2 .float-toolbars-item-sub img {
+	border: 0;
+	vertical-align:bottom;
+}
+
+.btn-global-4 {
+	display: block;
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	background: #e25353;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.btn-global-4:hover {
+	transition: all .2s ease-in-out;
+	color: #fff;
+	background: #009f00;
+}

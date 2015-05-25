@@ -1,0 +1,139 @@
+﻿@charset "utf-8";
+
+/* 效果CSS开始 */
+.msKeimgBox {
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+	padding-top: 30px;
+}
+
+.msKeimgBox ul {
+	width: 100%;
+	height: auto;
+}
+
+.msKeimgBox ul li {
+	width: auto;
+	height: auto;
+	float: left;
+	margin: 10px;
+	display: inline;
+	line-height: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.msKeimgBox ul li a {
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.msKeimgBox ul li span {
+	width: 90px;
+	height: 80px;
+	padding: 1px;
+	border: 1px solid #cccccc;
+}
+
+.msKeimgBox ul li img {
+	width: 90px;
+	height: 80px
+}
+
+.msKeimgBox h5 {
+	width: 100%;
+	line-height: 30px;
+	font-size: 16px;
+	clear: both;
+	color: #666666;
+}
+
+.msKeimgBox p {
+	width: 100%;
+	height: auto;
+	line-height: 1.8;
+	color: #666666;
+}
+
+.hidden {
+	display: none
+}
+
+.mskeLayBg {
+	background: #000;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 10;
+	opacity: 0.7;
+	filter: alpha(opacity =           70);
+	display: none;
+	_display: none !important
+}
+
+.mskelayBox {
+	position: fixed;
+	border: 7px solid #FFF;
+	z-index: 99999;
+	background: #FFF;
+	display: none;
+	_display: none !important;
+	top: 20px;
+	left: 35%;
+}
+
+.mskeImgBg {
+	height: 57px;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.mskeClose {
+	position: absolute;
+	top: -17px;
+	right: -17px;
+	cursor: pointer;
+}
+
+.mske_downIco {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.mske_imgDown {
+	background: url(../images/mke_imgMbg.png) repeat;
+	height: 57px;
+	width: 973px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font: 13px/57px "微软雅黑";
+	color: #FFF;
+}
+
+.mske_imgDown a {
+	margin-left: 34px;
+}
+
+.mskeTogBtn {
+	background: url(../images/mke_moreImg.jpg) no-repeat;
+	height: 93px;
+	width: 185px;
+	position: absolute;
+	z-index: 1;
+	right: 0px;
+	cursor: pointer;
+	bottom: 0px;
+}
+
+.mskeTogBtn2 {
+	background: url(../images/mke_moreImg2.jpg) no-repeat;
+	bottom: 10px;
+}
+/* 效果CSS结束 */

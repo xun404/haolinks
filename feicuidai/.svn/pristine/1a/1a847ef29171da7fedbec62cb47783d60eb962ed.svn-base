@@ -1,0 +1,228 @@
+
+.user_box {
+    width: 730px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.user_box .peo_box {
+    width: 108px;
+    height: auto;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    color: #00bc00;
+}
+
+.user_box .center_box {
+    width: 300px;
+    height: auto;
+    float: left;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #6a6a6a;
+}
+
+.user_box .center_box .username {
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.user_box .center_box p {
+    line-height: 30px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.user_box .center_box .user_a {
+    padding: 0px 15px;
+}
+
+.user_a_01 {
+    background: url(/resource/images/rz_icon_01.png) no-repeat 0px 1px;
+}
+
+.user_a_02 {
+    background: url(/resource/images/rz_icon_02.png) no-repeat 0px 1px;
+}
+
+.user_a_03 {
+    background: url(/resource/images/rz_icon_04.png) no-repeat 0px 1px;
+}
+
+.user_a_04 {
+    background: url(/resource/images/rz_icon_05.png) no-repeat 0px 1px;
+}
+
+.user_a_01s {
+    background: url(/resource/images/rz_icon_01.png) no-repeat 0px -17px;
+}
+
+.user_a_02s {
+    background: url(/resource/images/rz_icon_02.png) no-repeat 0px -17px;
+}
+
+.user_a_03s {
+    background: url(/resource/images/rz_icon_04.png) no-repeat 0px -17px;
+}
+
+.user_a_04s {
+    background: url(/resource/images/rz_icon_05.png) no-repeat 0px -17px;
+}
+
+.user_box .total_assets {
+    width: 299px;
+    height: auto;
+    float: right;
+    background: #eaeaea;
+    border-radius: 5px;
+}
+
+.user_box .total_assets .total_assrts_content {
+    width: 250px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.total_assrts_content .total_title {
+    height: 37px;
+    color: #00bc00;
+    font-size: 18px;
+}
+
+.total_assrts_content .total_button {
+}
+
+.total_assrts_content .total_button a {
+    display: block;
+    width: 103px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.total_assrts_content .total_button .recharge {
+    float: left;
+    background: #fb4646;
+}
+
+.total_assrts_content .total_button .recharge:hover {
+    background: #c92424;
+}
+
+.total_assrts_content .total_button .withdrawals {
+    float: right;
+    background: #00bc00;
+}
+
+.total_assrts_content .total_button .withdrawals:hover {
+    background: #1a9d1a;
+}
+
+.keyong_cash {
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px;
+    background: #eaeaea;
+    margin: 20px auto;
+}
+
+.keyong_cash span {
+    padding-left: 10px;
+    color: #434343;
+}
+
+.keyong_cash span samp {
+    color: #00bc00;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.account_table_box {
+    height: auto;
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+
+.account_table_box .account_title {
+    height: 45px;
+    line-height: 45px;
+    color: #00bc00;
+    border-bottom: 1px solid #eaeaea;
+    text-indent: 28px;
+}
+
+.account_table {
+    padding: 10px 0px 10px 28px;
+}
+
+.account_table td {
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+
+.account_table .account_td {
+    width: 90px;
+    color: #6b6b6b;
+    text-align: left;
+}
+
+.account_table .account_center_td {
+    width: 312px;
+    color: green;
+    text-align: left;
+}
+
+.account_table .account_right_td {
+    color: #00bc00;
+    text-align: left;
+}
+
+.account_table .last_td {
+    width: 300px;
+}
+
+.account_table .last_td {
+    color: #fb4646;
+    text-align: left;
+}
+
+.account_table .color_6464 {
+    color: #6b6b6b;
+}
+
+.binding_bank {
+    height: auto;
+    width: 552px;
+    margin: 0px auto;
+}
+
+.binding_bank .title {
+    height: 40px;
+    line-height: 40px;
+    color: #fb4646;
+    text-indent: 10px;
+}
+
+.binding_bank th {
+    background: #ccc;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+
+.binding_bank .binding_bank_td {
+    width: 33.3%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #3e3735;
+}
+
+.binding_bank tr:nth-child(odd) {
+    background: #f9f9f9;
+}

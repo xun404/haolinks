@@ -1,0 +1,58 @@
+.activities_all{ width:100%; height:auto;}
+
+.activities_box{ width:1000px; height:auto; margin:0px auto;}
+.activities_01{ background:#ffe488; }
+.activities_box_01{ background:url(/resource/images/pic_bg_01.png)#ffe488 no-repeat left center; }
+.activities_box_01 .content_box{margin-left:400px;}
+
+.activities_02{ background:#e4fff2; }
+.activities_box_02{background:url(/resource/images/pic_bg_02.png)#e4fff2 no-repeat right center; }
+.activities_box_02 .content_box{margin-right:400px;}
+
+.activities_03{ background:#ffba7d; }
+.activities_box_03{background:url(/resource/images/pic_bg_03.png)#ffba7d no-repeat left center; }
+.activities_box_03 .content_box{margin-left:400px;}
+
+.content_box{ width:675px; height:auto; padding:63px 0px;}
+.num_bg{ width:75px; height:75px; float:left; background:url(/resource/images/atvbg_num.png) no-repeat left center; font-size:40px; font-weight:bold; text-align:center; line-height:75px; color:#fff;}
+.content_activ{ width:600px; height:auto; float:left;}
+.content_activ .title_activ{ width:auto; height:72px; line-height:72px; color:#d63e29; font-size:35px;}
+.content_activ .activ_time{ width:375px; height:40px; background:url(/resource/images/ativ_bg.png) no-repeat left top; line-height:40px;color:#ffeaa3; text-indent:10px;}
+.content_activ .p_box{ padding:20px 0px;}
+.content_activ .p_box p{ line-height:30px; height:auto; color:#6a6a6a; font-size:18px;}
+.content_activ .p_box p span{ font-size:20px;}
+.content_activ .act_botton{ display:block;width:158px; height:45px; margin:10px 0px; line-height:45px; text-align:center; color:#fff; letter-spacing:2px; font-size:18px; background:url(/resource/images/activ_button.png) no-repeat left center;}
+
+
+.investment_all_1{ background:#fdffd2;}
+.investment_all_2{ background:#ffd7b4;}
+
+.investment_alls{ width:100%; height:auto;}
+.investment_alls .invertment{ width:1000px; height:auto; margin:0px auto; padding:40px 0px;}
+.investment_alls .inver_itm{ width:333px; height:auto; float:left; text-align:center;}
+
+.inver_itm_left{ width:270px; float:left;}
+.inver_itm_center{ width:460px;}
+.inver_itm_right{width:270px;float:right;}
+
+.inver_img{ width:auto; height:185px;  text-align:center; }
+.inver_right{ width:auto; height:auto; text-align:center;}
+.inver_right .inver_title{ height:auto; line-height:65px; font-size:20px;}
+.inver_right .inver_title_1{ color:#52b133;}
+.inver_right .inver_title_2{ color:#5eabbf;}
+.inver_right .inver_title_3{ color:#ffbf00;}
+.inver_right .inter_text{line-height:25px; height:auto;  font-size:14px; padding-top:5px;}
+
+.investment_all .invertment{width:1000px;margin:30px auto;border:1px solid #cecece;  }
+.investment_all .invertment .table_box{ width:1000px; color:#6e6e6e; width:960px; margin:0px auto;}
+.investment_all .invertment .title_head{ height:auto; line-height:60px; text-indent:20px; color:#6E6E6E;}
+.investment_all .invertment .title_head a{ float:right; padding-right:30px; display:inline; color:#00bc00;}
+.investment_all .invertment .title_head a:hover{ text-decoration:underline;}
+.investment_all .invertment .title_head span{    padding-right: 30px;font-size: 22px;color: #00BC00;}
+.investment_all .invertment .title_head samp{ color:#fb4646;}
+.investment_all .invertment .table_box .table_td{ height:97px; line-height:97px; border-bottom:1px solid #cecece; }
+.investment_all .invertment .table_box .list_one{ background:url(/resource/images/ya.png) no-repeat left center; line-height:97px; text-indent:30px;}
+.investment_all .invertment .table_box .table_td p{ line-height:20px; text-align:center;}
+.investment_all .invertment .table_box .no_td_bor{ border-bottom:none;}
+.investment_all .table_box a{ width:96px; height:32px; display:block; text-align:center; line-height:32px; border-radius:5px;  margin:20px auto; color:#fff;}
+.investment_all .table_box .color_chang{background:#00bc00;}

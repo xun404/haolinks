@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+<link  rel="stylesheet"  href="/resource/css/right.css">
+<script  src="/resource/js/right.js"></script>
+<script type="text/javascript">
+    BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 4009660755, selector: 'li_qq_service'});
+</script>
+<!--------右侧QQ部分 START--------->
+
+<div  class="sideToolBar">
+    <a  id="a-app"  href="/arith/investor_tools.htm"  class="appDownload"  target="_blank"><i>理财计算器</i></a>
+    <a  href="javascript:void(0);"  class="qqService"  title="工作时间：9:00-21:00" id="li_qq_service"><i>在线客服</i></a>
+    <a  href="javascript:void(0);"  class="wechatQRCode"><i></i></a>
+    <!-- <a  href="javascript:void(0);"  class="returnTop" id="to_top" style="display: block;"><i>返回顶部</i></a> -->
+</div>
+
+<%--<jsp:include page="/WEB-INF/views/frontend/public/calculator.jsp" />--%>
+
+<!---------右侧QQ部分 END--------->

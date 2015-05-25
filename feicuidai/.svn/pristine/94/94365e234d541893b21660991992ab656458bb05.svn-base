@@ -1,0 +1,31 @@
+/* 分行显示 */
+*{text-align:center;}
+strong{
+    display:inline-block;
+    text-align: left;width:100%;
+}
+.bg-title{
+    background: #f2f2f2;
+}
+/* 轮播插件 */
+#myCarousel .left,#myCarousel .right{
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*单行内容*/
+.list{
+    border-top:1px dotted #f2f2f2;
+    border-bottom:1px solid #e6e6e6;
+    line-height:4em;
+    vertical-align: middle;
+    height:4em;cursor:pointer;
+    overflow: hidden;
+}
+.m-tips{ /*单行居中文字*/
+    display:inline-block;
+    width:80%;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}

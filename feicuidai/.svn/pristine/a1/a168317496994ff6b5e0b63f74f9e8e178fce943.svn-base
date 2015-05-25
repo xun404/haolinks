@@ -1,0 +1,254 @@
+
+.common_main {
+    width: 957px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.common_main .left_box_menu {
+    width: 227px;
+    height: auto;
+    float: left;
+}
+
+.menu_ul {
+    width: 227px;
+    height: auto;
+}
+
+.menu_ul .father_menu {
+    width: 224px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background: url(/resource/images/arrow_up.png) #00bc00 no-repeat 55px 15px;
+    margin-bottom: 5px;
+}
+
+.menu_ul .son .curren {
+    color: #006d00;
+    background: url(/resource/images/list_sanjiao.png) #a9eaa9 no-repeat 55px 15px;
+}
+
+.menu_ul .son_menu {
+    display: block;
+    width: 210px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #494949;
+    cursor: pointer;
+    background: #f1f1f1;
+    margin-bottom: 5px;
+}
+
+.menu_ul .son_menu:hover {
+    border-left: 4px solid #00bc00;
+    color: #00bc00;
+    width: 206px;
+}
+
+.menu_ul .son_menu_current {
+    display: block;
+    width: 206px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #494949;
+    cursor: pointer;
+    background: #f1f1f1;
+    margin-bottom: 5px;
+    border-left: 4px solid #00bc00;
+    color: #00bc00;
+}
+
+.common_main .right_box_content {
+    width: 720px;
+    height: auto;
+    float: right;
+}
+
+.right_box_content .content_a {
+    width: 720pxt;
+    height: auto;
+}
+
+.right_box_content .content_a .a_list {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 7px;
+    background: #f1f1f1;
+    text-indent: 35px;
+    color: #494949;
+}
+
+.right_box_content .content_a .a_list:hover {
+    color: #00bc00;
+}
+
+.content_P {
+    line-height: 30px;
+    color: #494949;
+    padding-bottom: 40px;
+}
+
+.content_contact {
+    width: 632px;
+    height: 157px;
+    background: url(/resource/images/conteact_bg.jpg) #f1f1f1 no-repeat right bottom;
+    padding: 30px;
+}
+
+.content_contact p {
+    line-height: 35px;
+    height: 40px;
+    text-indent: 40px;
+    color: #494949;
+}
+
+.content_contact .picon_1 {
+    background: url(/resource/images/contact_us_bg.png) no-repeat 0px 5px;
+}
+
+.content_contact .picon_2 {
+    background: url(/resource/images/contact_us_bg.png) no-repeat 0px -40px;
+}
+
+.content_contact .picon_3 {
+    background: url(/resource/images/contact_us_bg.png) no-repeat 0px -80px;
+}
+
+.content_contact .picon_4 {
+    background: url(/resource/images/contact_us_bg.png) no-repeat 0px -120px;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+}
+
+.map img {
+    border: 2px solid #00bc00;
+    margin: 30px auto;
+}
+
+.team_item {
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.team_item .pic {
+    width: 215px;
+    height: auto;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.team_item .content {
+    width: 460px;
+    height: auto;
+    float: left;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+.team_item .content .title_hs {
+    height: 35px;
+    color: #00bc00;
+    font-size: 16px;
+}
+
+.team_item .content .touxian {
+    height: 30px;
+    color: #494949;
+}
+
+.team_item .content p {
+    line-height: 25px;
+    color: #494949;
+}
+
+.team_item .content a {
+    display: block;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 96px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #00bc00;
+}
+
+.team_item .content a:hover {
+    background: #1a9d1a;
+}
+
+.team_introduct {
+    width: 695px;
+    height: auto;
+    background: #f1f1f1;
+}
+
+.team_introduct .pic_box {
+    width: 400px;
+    height: auto;
+    float: left;
+    padding: 10px;
+}
+
+.team_introduct .introduction {
+    width: 264px;
+    height: auto;
+    float: left;
+    padding-top: 15px;
+}
+
+.team_introduct .introduction .title_hs {
+    height: 35px;
+    color: #00bc00;
+    font-size: 16px;
+}
+
+.team_introduct .introduction p {
+    line-height: 40px;
+    color: #494949;
+}
+
+.content_p {
+    line-height: 30px;
+    padding: 35px 0px;
+    color: #494949;
+}
+
+.new_center {
+}
+
+.new_center .team_item .pic {
+    width: auto;
+    padding: 10px;
+}
+
+.new_center .team_item .content {
+    padding: 10px;
+}
+
+.new_center .team_item .content .touxian {
+    height: 20px;
+    line-height: 15px;
+    color: #494949;
+}
+
+.new_center .team_item .content p {
+    line-height: 20px;
+    color: #6f6f6f;
+}
+
+.new_center .team_item .content a {
+    margin-top: 7px;
+}

@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>翡翠贷</title>
+<link type="text/css" rel="stylesheet" href="css/public.css"/>
+<link type="text/css" rel="stylesheet" href="css/index.css"/>
+<link type="text/css" rel="stylesheet" href="css/newCommon.css"/>
+
+
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jslides.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+
+</head>
+<body>
+
+<!--------最顶部 START--------->
+<div class="nav_all">
+  <div class="nav">
+  	<div class="nav_left">中国翡翠玉石行业互联网金融开创者!</div>
+    <div class="nav_right">
+    	<a href="#">安全中心</a>
+    	<a href="#" class="nav_a_login">登陆</a>
+        <a href="#" class="nav_a_registration">注册</a>
+      <div class="c"></div>
+    </div>
+    <div class="c"></div>
+  </div>
+</div>
+<!--------最顶部 END--------->
+
+<!--------LOGO and menu START--------->
+<div class="menu_all">
+  <div class="menu_box">
+
+	<div class="logo_box">
+    	<a href="#"><img src="images/logo.jpg" width="540" height="137" alt=""/></a>
+    </div>
+    <div class="menu">
+ <!--   	<div class="list_menu">
+            <a href="#">首页</a>
+            <a href="#">帮助中心</a>
+            <a href="#">贷款直通车</a>
+            <a href="#">理财计算器</a>
+        </div>-->
+        <div class="big_menu">
+        	<ul>
+            	<li><a href="#" class="cussr">我要投资</a></li>
+                <li><a href="#">我要借款</a></li>
+                <li><a href="#">我的账户</a></li>
+                <li><a href="#">指引我们</a></li>
+                <li><a href="#" style=" background:none;">关于我们</a></li>
+                <div class="c"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="c"></div>
+    
+	</div>
+</div>
+<!--------LOGO and menu END --------->
+
+<style>
+#full-screen-slider { width:100%; height:467px; float:left; position:relative}
+#slides { display:block; width:100%; height:467px; list-style:none; padding:0; margin:0; position:relative}
+#slides li { display:block; width:100%; height:100%; list-style:none; padding:0; margin:0; position:absolute}
+#slides .bgimage_01{background:url(images/01.jpg) no-repeat center top;}
+#slides .bgimage_02{ background:url(images/01.jpg) no-repeat center top;}
+#slides .bgimage_03{ background:url(images/01.jpg) no-repeat center top;}
+#slides .bgimage_04{ background:url(images/01.jpg) no-repeat center top;}
+
+#slides li a { display:block; width:100%; height:100%; text-indent:-9999px}
+#pagination { display:block; list-style:none; position:absolute; left:45%; top:430px; z-index:9900;}
+#pagination li { display:block; list-style:none; width:50px; height:10px; float:left; margin-left:15px;  background:#FFF }
+#pagination li a { display:block; width:100%; height:100%; padding:0; margin:0;  text-indent:-9999px;}
+#pagination li.current { background:#0092CE}
+
+</style>
+<!-------banner START------>
+
+<div id="full-screen-slider">
+	<ul id="slides">
+		<li class="bgimage_01"><a href="#" target="_blank"></a></li>
+		<li class="bgimage_02"><a href="#" target="_blank"></a></li>
+        <li class="bgimage_03"><a href="#" target="_blank"></a></li>
+        <li class="bgimage_04"><a href="#" target="_blank"></a></li>
+	</ul>
+</div>
+<div class="c"></div>
+<!-------banner END-------->
+<!-------banner START------>
+<div class="investment_all">
+
+<div class="invertment">
+	<a href="#" class="inver_itm">
+	<div class="inver_itm_left">
+    	<div class="inver_img"><img src="images/inoer_1.png" width="90" height="90" alt=""/></div>
+        <div class="inver_right">
+        	<div class="inver_title">经营理念</div>
+            <div class="inter_text"><div>致力于搭建投资者最安全理财平台</div>致力于解决翡翠玉石行业融资难融资贵问题</div>
+        </div>
+        
+    </div>
+    </a>
+    <a href="#" class="inver_itm">
+	<div class="inver_itm_lcenter">
+    	<div class="inver_img"><img src="images/inoer_2.png" width="77" height="85" alt=""/></div>
+        <div class="inver_right">
+        	<div class="inver_title">开创先河</div>
+            <div class="inter_text"> <div>翡翠玉石+互联网+金融</div>
+开创中国首家翡翠玉石质押互联网金融平台</div>
+        </div>
+        <div class="c"></div>
+    </div>
+    </a>
+    <a href="#" class="inver_itm">
+	<div class="inver_itm_right">
+    	<div class="inver_img"><img src="images/inoer_3.png" width="79" height="76" alt=""/></div>
+        <div class="inver_right">
+        	<div class="inver_title">安全保障</div>
+            <div class="inter_text"><div>100%无条件先行垫付本息</div>
+专做升值潜力大的精品翡翠玉石质押标</div>
+        </div>
+        <div class="c"></div>
+    </div>
+    </a>
+    <div class="c"></div>
+</div>
+
+</div>
+<!-------banner END------>
+<!-------主体框架 START------>
+<div class="main_all">
+    <div class="main_box">
+    <div class="investment_title"><span>投资列表</span></div>
+    <div class="inver_conternt">
+
+    <div class="title_box">
+    
+    <table width="1000" border="0" class="table_box" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th class="inver_th inter_width_1">借款编号</th>
+          <th class="inver_th inter_width_2">借款金额</th>
+          <th class="inver_th inter_width_3">年利率</th>
+          <th class="inver_th inter_width_4">借款期限</th>
+          <th class="inver_th inter_width_5">投标进度</th>
+          <th class="inver_th inter_width_6">状态</th>
+        </tr>
+      </thead>
+      <tbody> 
+        <tr>
+          <td class="inter_td inter_width_1">翡翠贷1503190002</td>
+          <td class="inter_td inter_width_2">¥10,000,000.00元</td>
+          <td class="inter_td inter_width_3">14.1%</td>
+          <td class="inter_td inter_width_4">2个月</td>
+          <td class="inter_td inter_width_5"><img src="images/load.png" width="71" height="71" alt=""/></td>
+          <td class="inter_td inter_width_6"><a href="#" class="color_chang">我要投资</a></td>
+        </tr>
+        <tr>
+          <td class="inter_td inter_width_1">翡翠贷1503190002</td>
+          <td class="inter_td inter_width_2">¥10,000,000.00元</td>
+          <td class="inter_td inter_width_3">14.1%</td>
+          <td class="inter_td inter_width_4">2个月</td>
+          <td class="inter_td inter_width_5"><img src="images/load.png" width="71" height="71" alt=""/></td>
+          <td class="inter_td inter_width_6"><a href="#" class="no_color">还款中...</a></td>
+        </tr>   
+        <tr>
+          <td class="inter_td inter_width_1">翡翠贷1503190002</td>
+          <td class="inter_td inter_width_2">¥10,000,000.00元</td>
+          <td class="inter_td inter_width_3">14.1%</td>
+          <td class="inter_td inter_width_4">2个月</td>
+          <td class="inter_td inter_width_5"><img src="images/load.png" width="71" height="71" alt=""/></td>
+          <td class="inter_td inter_width_6"><a href="#" class="no_color">还款中...</a></td>
+        </tr> 
+        <tr>
+          <td class="inter_td inter_width_1">翡翠贷1503190002</td>
+          <td class="inter_td inter_width_2">¥10,000,000.00元</td>
+          <td class="inter_td inter_width_3">14.1%</td>
+          <td class="inter_td inter_width_4">2个月</td>
+          <td class="inter_td inter_width_5"><img src="images/load.png" width="71" height="71" alt=""/></td>
+          <td class="inter_td inter_width_6"><a href="#" class="no_color">还款中...</a></td>
+        </tr>         
+    </tbody>
+    </table>
+
+
+    </div>
+
+  <a href="#" class="table_a_button">查看更多投资理财项目</a>
+    </div>
+    </div>
+</div>
+<!-------主体框架 END------>
+
+
+
+<!--------公告、咨询 START---------->
+<div class="list_content_text">
+<div class="notice_left">
+	<div class="notice">
+    	<h3>官方公告<a href="#"><img src="images/more.png" width="83" height="25" alt=""/></a></h3>
+        <ul>
+            <li><a href="#">万元悬赏——珠宝贷口号征集令发布！<img src="images/hot.png" width="27" height="14" alt=""/></a><span>[2015-03-05]</span></li>
+            <li><a href="#">翡翠贷2015年春节放假公告</a><span>[2015-02-13]</span></li>
+            <li><a href="#">关于珠宝贷恢复正常访问的公告</a><span>[2015-02-12]</span></li>
+            <li><a href="#">关于珠宝贷恢复正常访问的公告</a><span>[2015-02-12]</span></li>            
+            <li><a href="#" style="border-bottom:none;">关于珠宝贷系统升级的通知</a><span>[2015-02-12]</span></li>        
+        </ul>
+    </div>
+  
+	<div class="notice">
+    	<h3>官方公告<a href="#"><img src="images/more.png" width="83" height="25" alt=""/></a></h3>
+        <ul>
+            <li><a href="#">万元悬赏——珠宝贷口号征集令发布！<img src="images/hot.png" width="27" height="14" alt=""/></a><span>[2015-03-05]</span></li>
+            <li><a href="#">翡翠贷2015年春节放假公告</a><span>[2015-02-13]</span></li>
+            <li><a href="#">关于珠宝贷恢复正常访问的公告</a><span>[2015-02-12]</span></li>
+            <li><a href="#">关于珠宝贷恢复正常访问的公告</a><span>[2015-02-12]</span></li>            
+            <li><a href="#" style="border-bottom:none;">关于珠宝贷系统升级的通知</a><span>[2015-02-12]</span></li>        
+        </ul>
+    </div>    
+</div>
+
+<div class="consultation_right">
+	<div class="consultation_title_box">
+    	<div class="consultation_title" id="title_1">翡翠新闻</div>
+        <div class="consultation_title" id="title_2">财经视讯</div>
+        <div class="c"></div>
+    </div>
+    <ul class="consultation_ul" id="consultation_1">
+    	<div class="consultation_pic"><img src="images/pic_ul_img.jpg" width="280" height="133" alt=""/></div>
+        <li><a href="#">铂金首饰市场潜力无限—“铂金馆”第</a></li>
+        <li><a href="#">铂金首饰市场潜力无限—“铂金馆”第</a></li>
+        <li><a href="#">铂金首饰市场潜力无限—“铂金馆”第</a></li>
+        <li><a href="#">铂金首饰市场潜力无限—“铂金馆”第</a></li>
+        <li><a href="#">铂金首饰市场潜力无限—“铂金馆”第</a></li>
+        <li><a href="#" style="border-bottom:none">铂金首饰市场潜力无限—“铂金馆”第</a></li> 
+        <div class="consultation_more"><a href="#"><img src="images/more.png" width="83" height="25" alt=""/></a>  </div>
+             
+    </ul>
+    <ul class="consultation_ul" id="consultation_2">
+    	<div class="consultation_pic"><img src="images/pic_ul_img.jpg" width="280" height="133" alt=""/></div>
+        <li><a href="#">铂金首饰222222铂金馆”第</a></li>
+        <li><a href="#">铂金首222222铂金馆”第</a></li>
+        <li><a href="#">铂金首饰市场潜力无限—“铂金馆”第</a></li>
+        <li><a href="#">铂金首饰市场潜力无限—“铂金馆”第</a></li>
+        <li><a href="#">铂金首饰市场潜力无限—“铂金馆”第</a></li>
+        <li><a href="#" style="border-bottom:none">铂金首饰市场潜力无限—“铂金馆”第</a></li> 
+        <div class="consultation_more"><a href="#"><img src="images/more.png" width="83" height="25" alt=""/></a>  </div>
+             
+    </ul>
+
+</div>
+<div class="c"></div>
+
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#title_2").css("background-color","#909090");
+	$("#consultation_2").css("display","none");
+	$(".consultation_title").click(function(){
+
+		
+		$(".consultation_ul").css("display","none");
+		$(".consultation_title").css("background-color","#00bc00")
+		var con_id=$(this).attr("id");
+		var num=con_id.replace("title_","");
+		
+		$("#title_"+num).css("background-color","#909090")
+		$("#consultation_"+num).css("display","block")
+		
+		})
+	
+	})
+
+</script>
+
+<div class="cooperation_all">
+    <div class="cooperation">
+    <ul>
+    	<li><samp class="samp_title" id="Samp_1">合作伙伴</samp></li>
+        <li><samp class="samp_title" id="Samp_2">担保机构</samp></li>
+        <li><samp class="samp_title" id="Samp_3">上市公司</samp></li>
+        <div class="c"></div>
+    </ul>
+    <div class="content" id="Content_1">
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>  
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>   
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>            
+    </div>  
+    <div class="content" id="Content_2">
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>  
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>                      
+    </div> 
+    <div class="content" id="Content_3">
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>  
+        <a href="#" class="bank" target="_blank"><img src="images/nongye.jpg" width="119" height="41" alt=""/></a>
+        <a href="#" class="bank" target="_blank"><img src="images/jianshe.png" width="119" height="41" alt=""/></a>                      
+    </div>          
+    </div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#Samp_1").css("border-bottom","2px solid #fb4646");
+	$("#Content_2").css("display","none");
+	$("#Content_3").css("display","none");
+	$(".samp_title").click(function(){
+
+		
+		$(".samp_title").css("border-bottom","none");
+		$(".content").css("display","none")
+		var samp_id=$(this).attr("id");
+		var nums=samp_id.replace("Samp_","");
+		
+		$("#Samp_"+nums).css("border-bottom","2px solid #fb4646")
+		$("#Content_"+nums).css("display","block")
+		
+		})
+	
+	})
+
+</script>    
+    
+</div>
+
+<div class="friendship_all">
+<div class="friendship">
+	<div class="friendship_box">友情链接：
+    <a href="#">新石器</a>
+    <a href="#">P2P理财</a>
+    <a href="#">和讯网</a>
+    <a href="#">网贷之家</a>
+    <a href="#">网贷天眼</a>
+    <a href="#">投之家</a>
+    <a href="#">棕榈树</a>
+    <a href="#">高阳科技</a>
+    </div>
+    <div class="weixin_box">
+    <a href="#" class="list_ico_01"></a>
+    <a href="#" class="list_ico_02"></a>
+    <a href="#" class="list_ico_03"></a>
+    <a href="#" class="list_ico_04"></a>
+    </div>
+    <div class="c"></div>
+</div>
+</div>
+
+<div class="foot_all">
+<div class="foot">
+	<div class="foot_left">
+    	<div class="text">
+        <a href="#">关于我们</a>| 
+        <a href="#">联系我们</a>| 
+        <a href="#">服务协议</a>|
+        <a href="#">隐私</a>|
+        <a href="#">保护</a>|
+        <a href="#">法律声明</a>|
+        <a href="#">公司证件</a>|
+        <a href="#">网站地图</a>
+        </div>
+        <div class="ico_box">
+            <a href="#"><img src="images/ico_1.png" width="99" height="35" alt=""/></a>
+            <a href="#"><img src="images/ico_2.png" width="99" height="35" alt=""/></a>
+            <a href="#"><img src="images/ico_3.png" width="99" height="35" alt=""/></a>
+            <a href="#"><img src="images/ico_4.png" width="99" height="35" alt=""/></a>
+            <a href="#"><img src="images/ico_5.png" width="99" height="35" alt=""/></a>
+            <a href="#"><img src="images/ico_6.png" width="99" height="35" alt=""/></a>
+            <a href="#"><img src="images/ico_7.png" width="99" height="35" alt=""/></a>
+        </div>
+        <div class="tex">© 2014 珠宝贷 All rights reserved | 深圳市珠宝贷互联网金融服务股份有限公司 | 粤ICP备 14034197号</div>
+    </div>
+    <div class="foot_right">0755-86726669</div>
+    <div class="c"></div>
+</div>
+
+</div>
+
+<!--------公告、咨询  END---------->
+
+<!--------右侧QQ部分 START--------->
+
+<ul class="float-toolbars clearfix">
+    <li class="float-toolbars-item">
+        <a href="http://www.yitoujr.com/calculator.action" class="float-toolbars-title" style="line-height:36px;background: url(images/feedback-8.png) no-repeat;"></a>
+    </li>
+    <li class="float-toolbars-item user-feedback-2" id="li_qq_service">
+        <a target="_blank" href="#" class="float-toolbars-title">QQ<br>客服</a>
+        <div style="display: none;" class="float-toolbars-item-sub">
+            <div><span>客服1</span><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2462065632&amp;site=qq&amp;menu=yes" style="background:#ddd;"><img src="images/online.png" width="70" height="20" alt=""/></a></div>
+            <div><span>客服2</span><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1463888503&amp;site=qq&amp;menu=yes" style="background:#ddd;"><img src="images/online.png" width="70" height="20" alt=""/></a></div>
+            <div><span>客服3</span><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2714153192&amp;site=qq&amp;menu=yes" style="background:#ddd;"><img src="images/online.png" width="70" height="20" alt=""/></a></div>
+        </div>
+    </li>
+    <li class="float-toolbars-item rel" style="position:relative;" id="yt_block">
+        <a href="javascript:void(0);" class="user-feedback-10 float-toolbars-title" style="line-height:36px;background: url(images/float.png) no-repeat;"></a>
+        <div class="float-toolbars-item-sub" style="border: 1px solid rgb(188, 188, 188); width: 130px; height: 130px; position: absolute; left: -132px; top: 0px; display: none;">
+            <img src="微信二维码.jpg" alt="" style="display:block; width:130px; height:130px;">
+        </div>
+    </li>
+    <li style="display: block;" class="float-toolbars-item user-feedback-3" id="to_top">
+        <a class="float-toolbars-title">返回<br>顶部</a>
+    </li>
+</ul>  
+
+<!---------右侧QQ部分 END--------->
+
+<script>
+$(document).ready(function() {
+    $('#li_qq_service').mouseover(function() {
+        $(this).children('div').show();
+    }).mouseout(function() {
+        $(this).children('div').hide();
+    });
+    
+    $('#yt_block').mouseover(function() {
+        $(this).children('div').show();
+    }).mouseout(function() {
+        $(this).children('div').hide();
+    });
+    
+    $(window).scroll(function(){
+        if ($(window).scrollTop()>100){
+            $("#to_top").fadeIn(1000);
+        }
+        else {
+            $("#to_top").fadeOut(1000);
+        }
+    });
+    
+    //当点击跳转链接后，回到页面顶部位置
+    $("#to_top").click(function(){
+        $('body, html').animate({scrollTop:0},1000);
+        return false;
+    });
+});
+</script>
+</body>
+</html>

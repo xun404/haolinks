@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.recharge_input {
+    display: block;
+    float: left;
+    height: 35px;
+    padding: 0;
+    width: 202px;
+    border: 1px solid #acacac;
+    border-radius: 5px;
+    font-family: "微软雅黑";
+    text-indent: 10px;
+    font-size: 14px;
+}
+
+.recharge_button {
+    margin-left: 85px;
+    width: 222px;
+    background: none repeat scroll 0 0 #00bc00;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.recharge_link {
+    color: #fb4646;
+    line-height: 30px;
+    padding-left: 10px;
+    text-align: left;
+}

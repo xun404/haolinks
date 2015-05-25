@@ -1,0 +1,67 @@
+<%@ page language="java" pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3" />
+    <meta http-equiv="description" content="This is my page" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/resource/phone/css/public.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript"
+            src="/resource/js/jquery/jquery-1.8.0.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="/resources/css/skin/simple_gray/ymPrompt.css"/>
+    <script type="text/javascript" src="/resources/js/ymPrompt.js"></script>
+    <script type="text/javascript" src="/resource/phone/js/regist.js"></script>
+    <script type="text/javascript" src="/resource/phone/js/regist_valid.js"></script>
+<title>首页</title>
+</head>
+<body>
+<div class="main">
+    <form id="df_rigster" action="/phoneVisitor/regist" method="post">
+
+    <input type="hidden" name="member" value="${generuser.id }"/>
+    <input type="hidden" name="code" value="${code}"/>
+<div class="register_box">
+	<input type="text" name="phone" id="phone" placeholder="请输入手机号码" class="register_input"/>
+    <a class="register_a"><img src="/resource/phone/images/res_yes.png" width="25" height="25" alt=""/></a>
+    <div class="c"></div>
+</div>
+
+<div class="register_box">
+	<input type="password" name="pwd" id="password" placeholder="请输入密码" class="register_input"/>
+    <a class="register_a"><img src="/resource/phone/images/res_yes.png" width="25" height="25" alt=""/></a>
+    <div class="c"></div>
+</div>
+
+<div class="register_box">
+	<input type="password" name="pwd2" id="pwd2" placeholder="请输入密码" class="register_input"/>
+    <a class="register_a"><img src="/resource/phone/images/res_yes.png" width="25" height="25" alt=""/></a>
+    <div class="c"></div>
+</div>
+
+<input type="text" id="recommend" name="recommend" placeholder="请输入推荐人手机号码（可不填写）"  class="register_box_input"/>
+
+
+<div class="register_box register_bos">
+	<input type="text" name="phoneCode" id="phoneCode"  placeholder="请输入短信验证码" class="register_input"/>
+    <a onclick="send_sms(this);"id="phoneCaptcha"  class="register_a">获取短信验证码</a>
+    <div class="c"></div>
+</div>
+
+<a onclick="check()" class="button_style">注册</a>
+        <script>
+            <c:if test="${!empty phone_error}">
+            ymPrompt.alert("${phone_error }", 250, 200, '提示', null);
+            </c:if>
+        </script>
+</form>
+</div>
+<jsp:include page="/WEB-INF/views/phone/public/footer.jsp"/>
+</body>
+</html>

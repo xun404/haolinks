@@ -1,0 +1,351 @@
+@charset "utf-8";
+blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, img, input, legend, li, ol, p, pre, select, table, textarea, ul {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 14px/1.5 "Microsoft YaHei", "Hiragino Sans GB", arial, tahoma;
+    background: #fff
+}
+
+a, body {
+    color: #333
+}
+
+a {
+    text-decoration: none
+}
+
+.sideToolBar a, .sideToolBar a i, .smartTender .intro, .textList1 li a, .textList1 li a:before, .videoSlide > .num b, .videoSlide > em {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear
+}
+
+.footerNav .iconBox a, .footerNav .wrap > .fr .serviceLink, .notice .speaker, .sideToolBar a, .topNav .loginBar i {
+    background: url(/resource/images/icon-sprite-v2-2.png) 0 6px no-repeat
+}
+
+.topNav {
+    line-height: 40px;
+    background: #666
+}
+
+.topNav, .topNav a {
+    color: #d6d6d6
+}
+
+.topNav a:hover {
+    color: #fff
+}
+
+.topNav .fl b {
+    margin: 0 12px 0 5px
+}
+
+.topNav .loginBar .signUp {
+    color: #6c6
+}
+
+.topNav .loginBar .signUp:hover {
+    color: #6ce56c
+}
+
+.topNav .loginBar .signIn {
+    margin-left: 20px;
+    color: #00a4ff
+}
+
+.topNav .loginBar .signIn:hover {
+    color: #2bf
+}
+
+.topNav .loginBar i {
+    padding-left: 24px;
+    background-position: 0 -31px
+}
+
+.topNav .loginBar b {
+    color: #ffd400
+}
+
+.sideToolBar {
+    width: 36px;
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+    z-index:6666;
+}
+
+.sideToolBar a {
+    height: 36px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: #e5e5e5
+}
+
+.sideToolBar a i, .sideToolBar a:hover {
+    color: #fff;
+    background-color: #309f29
+}
+
+@keyframes qqService {
+    0%, 84% {
+        background-position: 7px -512px
+    }
+    85% {
+        background-position: 7px -517px
+    }
+    87% {
+        background-position: 7px -512px
+    }
+    90% {
+        background-position: 7px -515px
+    }
+    92% {
+        background-position: 7px -512px
+    }
+    94% {
+        background-position: 7px -514px
+    }
+    96% {
+        background-position: 7px -512px
+    }
+    98% {
+        background-position: 7px -513px
+    }
+    100% {
+        background-position: 7px -512px
+    }
+}
+
+@-webkit-keyframes qqService {
+    0%, 84% {
+        background-position: 7px -512px
+    }
+    85% {
+        background-position: 7px -517px
+    }
+    87% {
+        background-position: 7px -512px
+    }
+    90% {
+        background-position: 7px -515px
+    }
+    92% {
+        background-position: 7px -512px
+    }
+    94% {
+        background-position: 7px -514px
+    }
+    96% {
+        background-position: 7px -512px
+    }
+    98% {
+        background-position: 7px -513px
+    }
+    100% {
+        background-position: 7px -512px
+    }
+}
+
+@-moz-keyframes qqService {
+    0%, 84% {
+        background-position: 7px -512px
+    }
+    85% {
+        background-position: 7px -517px
+    }
+    87% {
+        background-position: 7px -512px
+    }
+    90% {
+        background-position: 7px -515px
+    }
+    92% {
+        background-position: 7px -512px
+    }
+    94% {
+        background-position: 7px -514px
+    }
+    96% {
+        background-position: 7px -512px
+    }
+    98% {
+        background-position: 7px -513px
+    }
+    100% {
+        background-position: 7px -512px
+    }
+}
+
+@-ms-keyframes qqService {
+    0%, 84% {
+        background-position: 7px -512px
+    }
+    85% {
+        background-position: 7px -517px
+    }
+    87% {
+        background-position: 7px -512px
+    }
+    90% {
+        background-position: 7px -515px
+    }
+    92% {
+        background-position: 7px -512px
+    }
+    94% {
+        background-position: 7px -514px
+    }
+    96% {
+        background-position: 7px -512px
+    }
+    98% {
+        background-position: 7px -513px
+    }
+    100% {
+        background-position: 7px -512px
+    }
+}
+
+@-o-keyframes qqService {
+    0%, 84% {
+        background-position: 7px -512px
+    }
+    85% {
+        background-position: 7px -517px
+    }
+    87% {
+        background-position: 7px -512px
+    }
+    90% {
+        background-position: 7px -515px
+    }
+    92% {
+        background-position: 7px -512px
+    }
+    94% {
+        background-position: 7px -514px
+    }
+    96% {
+        background-position: 7px -512px
+    }
+    98% {
+        background-position: 7px -513px
+    }
+    100% {
+        background-position: 7px -512px
+    }
+}
+
+.sideToolBar .appDownload {
+    background-position: 11px -440px;
+    animation: appDownload 5s linear infinite;
+    -webkit-animation: appDownload 5s linear infinite;
+    -moz-animation: appDownload 5s linear infinite;
+    -ms-animation: appDownload 5s linear infinite;
+    -o-animation: appDownload 5s linear infinite
+}
+
+.sideToolBar .appDownload:hover {
+    background-position: 11px -476px;
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none
+}
+
+.sideToolBar .qqService {
+    background-position: 7px -512px;
+    animation: qqService 5s linear infinite;
+    -webkit-animation: qqService 5s linear infinite;
+    -moz-animation: qqService 5s linear infinite;
+    -ms-animation: qqService 5s linear infinite;
+    -o-animation: qqService 5s linear infinite
+}
+
+.sideToolBar .qqService:hover {
+    background-position: 7px -548px;
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none
+}
+
+.sideToolBar .wechatQRCode {
+    cursor: default;
+    background-position: 7px -584px
+}
+
+.sideToolBar .wechatQRCode:hover {
+    background-position: 7px -620px
+}
+
+.sideToolBar .returnTop {
+    display: none;
+    background-position: 7px -656px
+}
+
+.sideToolBar .returnTop:hover {
+    background-position: 7px -692px
+}
+
+.sideToolBar a i {
+    width: 0;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    position: absolute;
+    right: 36px;
+    top: 0;
+    text-align: center;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.sideToolBar .qqService i {
+    top: 46px
+}
+
+.sideToolBar .returnTop i {
+    top: 138px
+}
+
+.sideToolBar .wechatQRCode i {
+    height: 181px;
+    position: absolute;
+    top: -37px;
+    background: url(/resource/images/qqwei-v2.png) no-repeat
+}
+
+.sideToolBar a:hover i {
+    width: 88px;
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.sideToolBar .wechatQRCode:hover i {
+    width: 162px
+}
+
+.bubble {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 83px;
+    top: 10px;
+    color: #fff;
+    font-size: 12px;
+    width: 21px;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    text-align: center;
+    background: url(/resource/images/bubble.png) no-repeat
+}

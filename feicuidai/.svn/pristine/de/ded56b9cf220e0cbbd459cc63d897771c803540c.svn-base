@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+         pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<div class="footer" data-pisition="fixed" data-role="footer">
+  <div class="foot_item foot_1"><a href="/phone/index"><img src="/resource/phone/images/index_pic.png" width="25" height="36" alt=""/></a></div>
+  <div class="foot_item foot_2"><a href="#"><img src="/resource/phone/images/investment_financing.png" width="40" height="36" alt=""/></a>
+  </div>
+  <div class="foot_item foot_3"><a href="#"><img src="/resource/phone/images/individual_center_s.png" width="40" height="36" alt=""/></a>
+  </div>
+  <div class="foot_item foot_4"><a href="#"><img src="/resource/phone/images/about_me.png" width="40" height="36" alt=""/></a></div>
+  <div class="c"></div>
+</div>

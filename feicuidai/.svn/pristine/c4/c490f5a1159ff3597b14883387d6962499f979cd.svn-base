@@ -1,0 +1,175 @@
+<%@ page language="java" pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme() + "://"
+            + request.getServerName() + ":" + request.getServerPort()
+            + path + "/";
+%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>翡翠贷-我的账户</title>
+    <link type="text/css" rel="stylesheet" href="/resource/css/individual_center.css"/>
+    <link type="text/css" rel="stylesheet" href="/resource/css/my_account.css"/>
+    <link rel="stylesheet" type="text/css" href="/resource/css/vipcenter.css"/>
+</head>
+<body>
+<!-- top -->
+<jsp:include page="/WEB-INF/views/frontend/public/header.jsp"/>
+
+<div class="gren"></div>
+
+<!--------注册 Start--------------->
+<div class="individual_center_all">
+    <div class="individual_center">
+        <jsp:include page="/WEB-INF/views/frontend/public/leftMenu.jsp"/>
+        <div class="right_box">
+        <div class="user_box">
+           
+<!-- 右侧子内容 Start-->
+<div class="innerTitle">
+  <div >
+      <span id="welcome" class="rspan">下午好，用户1588888888！</span>
+      <span id="userlevel" class="ispan" style="width:auto">
+          <img src="/resource/images/id.png" alt="身份认证" />
+          <img src="/resource/images/phonenumber.png" alt="手机认证" />
+          <img src="/resource/images/safety.png" alt="征信认证" />
+          <img src="/resource/images/e-mail_1.png" alt="邮件认证" />
+          &nbsp;&shy;
+      </span>
+      <span class="rspan vspan">| </span>
+      <span id="change_level" class="rspan">安全等级：高&nbsp;&nbsp;<a href="#" >[提升]</a>
+      </span>
+      <span id="login_time" class="rspan">上次登录时间:2015-5-12 11:38:22</span>
+  </div>
+    <div class="dotline"></div>
+</div>
+
+<div class="clear"></div>
+<!--账户情况-->
+   <div class="accinfo">
+     
+      <div style="width:64%;float:left;">
+      <div class="br acc1" >
+       <div class="money_label">
+         <span class="rspan hw">可用金额：</span><span class="rspan tw">1000,000.00元</span>
+         <div class="clear"></div>
+         <div class="vline"></div>
+         <div class="clear"></div>
+         <span class="rspan hw">冻结金额：</span><span class="rspan tw">1000,000.00元</span>
+         <div class="clear"></div>
+         <span class="rspan hw">待收本金：</span><span class="rspan tw">1000,000.00元&nbsp;<a href="#">(0笔)</a></span>
+         <div class="clear"></div>
+         <span class="ispan">&nbsp;&shy;<img src="/resource/images/+.png" alt="待收利息" /> </span> <span class="rspan" style="width:30%;margin:0px;">待收利息：</span>
+         <span class="rspan tw">1000,000.00元</span>
+     </div>
+     <div class="buttons">
+           <span class="rspan" style="color:#00bc00;"><strong>体验金：</strong>2000000.00元</span>
+            <div class="clear"></div>
+         <div class="vline"></div>
+           <a href="#">充值</a><a href="#" style="background-color: #9bb79b">提现</a>
+     </div>
+ </div>
+   <div class="br acc1" style="height:2.3em;">
+       <div class="money_label">
+       <span class="ispan">&nbsp;&shy;<img src="/resource/images/=.png" alt="账户总资产" /></span> <span class="rspan" style="width:30%;margin:0px;color:#00b000">账户总资产：</span>
+       <span class="rspan tw">1000,000.00元</span></div>
+
+
+   </div>
+    </div>
+
+    <div class="br acc2">
+        <div class="acc2_list_box">
+            <div class="bg_div"><img src="/resource/images/zhuan1.png" /></div>
+            <div class="money_num"><strong>0.0元</strong></div>
+           <div class="clear" style="height:4px;margin:0;padding:0;">&nbsp;</div>
+            <span class="yizhuan">0.00元 <img src="/resource/images/yizhuan.png" /></span>
+            <span class="daishou">0.00元 <img src="/resource/images/daishou.png" /></span>
+
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+<!--投资统计-->
+<div class="br acc2 investU" style="width:98%;height:9em;margin-left:0;margin-top:2em;">
+    <div class="dimg">
+       <img src="/resource/images/tou.png" width="63" alt="投资资金" />
+    </div>
+    <p style="margin-left:2em;width:18%;" title="这里放入提示">投资进行中总额:<br />5000,000.00元</p>
+    <div class="hline"></div>
+    <div class="dimg">
+        <img src="/resource/images/zhuan.png" width="63" alt="利润" />
+    </div>
+    <p style="margin-left:2em;">收取利息
+        <br />5000,000.00元
+    </p>
+    <p class="p2">=</p>
+    <p>已收利息
+        <br />3000,000.00元
+    </p>
+    <p class="p2">+</p>
+    <p>待收利息
+        <br />2000,000.00元
+    </p>
+
+</div>
+<div class="clear"></div>
+<!--底部表格-->
+<div class="revA">
+<span style="font-size:1.1em;"><a href="#">最新投资</a></span>
+    <span style="float:right;"><a href="#">更多投资</a></span>
+</div>
+<div class="revList">
+ <table class="gridtable">
+
+     <tr>
+         <th>项目名称</th><th>还款方式</th><th>年利率</th>
+         <th>第几期/总期数</th><th>还款日期</th><th>待收本金</th>
+         <th>待收利息</th><th>状态</th>
+     </tr>
+     <tr>
+        <td>翡翠贷2015052507</td>
+         <td>先息后本</td>
+         <td>18%</td>
+         <td>3/6</td>
+         <td>2015-9-30</td>
+         <td>50.0000.00</td>
+         <td>25.000.00</td>
+         <td>待收</td>
+     </tr>
+     <tr>
+         <td>翡翠贷2015052506</td><td>先息后本</td><td>18%</td><td>3/6</td><td>2015-9-30</td><td>50.0000.00</td>
+         <td>25.000.00</td><td>待收</td>
+     </tr>
+     <tr>
+         <td>翡翠贷2015052505</td><td>先息后本</td><td>18%</td><td>3/6</td><td>2015-9-30</td><td>50.0000.00</td>
+         <td>25.000.00</td><td>待收</td>
+     </tr>
+     <tr>
+         <td>翡翠贷2015052504</td><td>先息后本</td><td>18%</td><td>3/6</td><td>2015-9-30</td><td>50.0000.00</td>
+         <td>25.000.00</td><td>待收</td>
+     </tr>
+
+ </table>
+</div>
+
+<!-- 右侧子内容 end -->
+        </div>
+        </div>
+        <div class="c"></div>
+    </div>
+</div>
+
+<jsp:include page="/WEB-INF/views/frontend/public/floatRight.jsp"/>
+
+<jsp:include page="/WEB-INF/views/frontend/public/footer.jsp"/>
+
+</body>
+</html>

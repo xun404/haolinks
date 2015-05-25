@@ -1,0 +1,336 @@
+
+.user_box {
+    width: 730px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.user_box .peo_box {
+    width: 108px;
+    height: auto;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    color: #00bc00;
+}
+
+.user_box .center_box {
+    width: 300px;
+    height: auto;
+    float: left;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #6a6a6a;
+}
+
+.user_box .center_box .username {
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.user_box .center_box p {
+    line-height: 30px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.user_box .center_box .user_a {
+    padding: 0px 15px;
+}
+
+.user_a_01 {
+    background: url(/resource/images/rz_icon_01.png) no-repeat 0px 1px;
+}
+
+.user_a_02 {
+    background: url(/resource/images/rz_icon_02.png) no-repeat 0px 1px;
+}
+
+.user_a_03 {
+    background: url(/resource/images/rz_icon_04.png) no-repeat 0px 1px;
+}
+
+.user_a_04 {
+    background: url(/resource/images/rz_icon_05.png) no-repeat 0px 1px;
+}
+
+.user_a_01s {
+    background: url(/resource/images/rz_icon_01.png) no-repeat 0px -17px;
+}
+
+.user_a_02s {
+    background: url(/resource/images/rz_icon_02.png) no-repeat 0px -17px;
+}
+
+.user_a_03s {
+    background: url(/resource/images/rz_icon_04.png) no-repeat 0px -17px;
+}
+
+.user_a_04s {
+    background: url(/resource/images/rz_icon_05.png) no-repeat 0px -17px;
+}
+
+.user_box .total_assets {
+    width: 299px;
+    height: auto;
+    float: right;
+    background: #eaeaea;
+    border-radius: 5px;
+}
+
+.user_box .total_assets .total_assrts_content {
+    width: 250px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.total_assrts_content .total_title {
+    height: 37px;
+    color: #00bc00;
+    font-size: 18px;
+}
+
+.total_assrts_content .total_button {
+}
+
+.total_assrts_content .total_button a {
+    display: block;
+    width: 103px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.total_assrts_content .total_button .recharge {
+    float: left;
+    background: #fb4646;
+}
+
+.total_assrts_content .total_button .recharge:hover {
+    background: #c92424;
+}
+
+.total_assrts_content .total_button .withdrawals {
+    float: right;
+    background: #00bc00;
+}
+
+.total_assrts_content .total_button .withdrawals:hover {
+    background: #1a9d1a;
+}
+
+.keyong_cash {
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px;
+    background: #eaeaea;
+    margin: 20px auto;
+}
+
+.keyong_cash span {
+    padding-left: 10px;
+    color: #434343;
+}
+
+.keyong_cash span samp {
+    color: #00bc00;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.account_table_box {
+    height: auto;
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+
+.account_table_box .account_title {
+    height: 45px;
+    line-height: 45px;
+    color: #00bc00;
+    border-bottom: 1px solid #eaeaea;
+    text-indent: 28px;
+}
+
+.account_table {
+    padding: 10px 0px 10px 28px;
+}
+
+.account_table td {
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+
+.account_table .account_td {
+    width: 90px;
+    color: #6b6b6b;
+    text-align: left;
+}
+
+.account_table .account_center_td {
+    width: 312px;
+    color: green;
+    text-align: left;
+}
+
+.account_table .account_right_td {
+    color: #00bc00;
+    text-align: left;
+}
+
+.account_table .last_td {
+    width: 300px;
+}
+
+.account_table .last_td {
+    color: #fb4646;
+    text-align: left;
+}
+
+.account_table .color_6464 {
+    color: #6b6b6b;
+}
+
+.binding_bank {
+    height: auto;
+    width: 552px;
+    margin: 0px auto;
+}
+
+.binding_bank .title {
+    height: 40px;
+    line-height: 40px;
+    color: #fb4646;
+    text-indent: 10px;
+}
+
+.binding_bank th {
+    background: #ccc;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+
+.binding_bank .binding_bank_td {
+    width: 33.3%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #3e3735;
+}
+
+.binding_bank tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+
+/* for memberCenter.jsp , append 5-14 */
+
+
+.rspan{display:inline-block;float:left;line-height:32px;vertical-align: middle;text-align:left;}
+.ispan{
+	width:10%;display:inline-block;float:left;text-align:center;
+    line-height:1.8em;vertical-align:middle;
+}
+.hw{width:30%;margin-left:10%;}
+.tw{width:50%;margin-left:5%;}
+.dotline{border-bottom:1px dotted;width:100%;clear:both;height:1em;}
+
+.br{
+    border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+}
+.accInfo{width:100%;padding:2px;}
+.money_label{height:42px;line-height:40px;vertical-align: middle;width:64%;float:left;}
+.buttons{width:33%;float:left;overflow: hidden;text-align:center}
+.buttons a{
+    background-color: #00bc00;
+    width: 80%;
+    height: 32px;
+    display:inline-block;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 8px auto;
+    color: #FFF;
+}
+.buttons a:hover{color:white;}
+
+.acc1{background-color: #f5f5f7;border:1px solid #dfdfe1;height:9.5em;width:100%;margin-top:1em; float: left;}
+.hline{background: url(/resource/images/hline.png) repeat-y;width:2px;height:100%;margin-left:1%;float:left;}
+.vline{background: url(/resource/images/vline.png) repeat-x;height:2px;width:100%;}
+
+
+.clear{clear:both;}
+#welcome{margin-left:10px;margin-right:18px;}
+#userlevel img{display: inline-block;floact:left;margin-top:5px;}
+#login_time{font-family:'宋体';font-size:0.875em;float:right;margin-right:10px;}
+
+.acc2{background-color: #f5f5f7;border:1px solid #dfdfe1;height:auto;width:26%;margin:1em 1% auto 2%;float:left;background: #fdf4e2; border: 1px solid #ebdcbf; }
+.acc2 .acc2_list_box{ width: 100%; height: 13em; }
+.acc2 .acc2_list_box .bg_div{ height:50%;text-align: center; }
+.acc2 .acc2_list_box .bg_div img{ height: 85%;  padding-top:0.5em;}
+ .money_num{height:1.4em; line-height:1.4em; text-align: center; color: #c84d07;font-size:1.2em;}
+.acc2 .acc2_list_box span{ height: 2em; line-height: 2em; text-align: center; display: block; color: #6a6a6a;}
+.acc2 .acc2_list_box .yizhuan{}
+
+.investU {
+    -webkit-box-shadow: 0 0 0 green,
+    0 0 0 green,
+    0 3px 3px #c18300, /*底部*/ 0 0 0 green;
+    -moz-box-shadow: 0 0 0 green,
+    0 0 0 green,
+      0 3px 3px #c18300, /*底部*/ 0 0 0 green;
+    box-shadow: 0 0 0 green,
+    0 0 0 green,
+     0 3px 3px #c18300, /*底部*/ 0 0 0 green;
+}
+.investU .dimg{width:7%;margin-top:1.5em;float:left;}
+.investU p{margin-top:1.2em;line-height:2em;float:left;width:15%;
+    color: #c84d07;vertical-align: middle;font-size:1.1em;}
+.investU .p2{width:1.6em;margin-right:3%;}
+
+
+.revA{width:98%;margin-left:0;margin-top:2em;}
+.revA a{color: #6a6a6a}
+.revA span{display:inline-block;}
+
+
+.revList{width:98%;padding:0;margin-top:1em;overflow: hidden}
+.gridtable {
+    width:100%;
+    text-align:center;
+    color:#6a6a6a;
+    border-width: 1px;
+    border-color:  #dfdfe1;
+    border-collapse: collapse;
+}
+.gridtable tr{height:4em;}
+.gridtable th {
+    text-align: center;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color:  #dfdfe1;
+    background-color:  #f5f5f7;
+}
+.gridtable td {
+
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color:  #dfdfe1;
+    background-color: #ffffff;
+}
+
+/*********** append 5-14 end *******/
+
+
+

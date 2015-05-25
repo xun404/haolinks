@@ -1,0 +1,50 @@
+
+.navbox {
+	z-index: 999; position: relative; margin: 45px auto 0px; width: 600px; height: 45px; float:right; font-family: "Î¢ÈíÑÅºÚ", "microsoft yahei";
+}
+.navbox span {
+	position: relative; text-align: center; padding-bottom: 0px; margin: 0px 6px; padding-left: 0px; width: 85px; padding-right: 0px; display: inline-block; float: left; height: 45px; padding-top: 0px
+}
+.navbox a {
+	z-index: 999; text-align: center; padding-bottom: 0px; line-height: 22px; padding-left: 0px; width: 85px; padding-right: 0px; display: inline-block; height: 45px; color: #333; font-size: 16px; overflow: hidden; padding-top: 0px
+}
+.navbox a:hover {
+	color: #333
+}
+.navbox a.navhover {
+	color: #333
+}
+.navbox span div {
+	z-index: 999; position: absolute; text-align: center; background-color: #fff; width: 120px; display: none; height: auto; border-top: #ddd 1px solid; top: 45px; left: -18px
+}
+.navbox span div a {
+	border-bottom: #ddd 1px solid; border-left: #ddd 1px solid; line-height: 40px; width: 118px; display: block; height: 40px; color: #333; font-size: 12px; border-top: #ddd 1px; border-right: #ddd 1px solid
+}
+.navbox span div a:hover {
+	background: #dedede; color: #cc6600;
+}
+.navbox span div a.navhoverlistlink {
+	background: #51abff; color: #ffffff
+}
+
+#wdzh {
+	z-index: 999; position: absolute; text-align: center; width: 80px; display: none; border-top: #ddd 1px solid; top: 40px; right: 130px
+}
+#wdzh a {
+	border-bottom: #ddd 1px solid; border-left: #ddd 1px solid; padding-bottom: 0px; line-height: 30px; background-color: #fff; margin: 0px; padding-left: 0px; width: 80px; padding-right: 0px; display: block; height: 30px; color: #444; font-size: 12px; border-top: #ddd 1px; border-right: #ddd 1px solid; padding-top: 0px
+}
+#wdzh a:hover {
+	background-color: #dedede; color: #cc6600
+}
+.navbox b {
+	border-bottom: #adadad 6px solid; position: absolute; border-left: transparent 6px dashed; width: 0px; height: 0px; margin-left: -6px; font-size: 0px; overflow: hidden; border-top: transparent 6px dashed; top: -13px; border-right: transparent 6px dashed; left: 50%
+}
+#wdzh b {
+	border-bottom: #adadad 6px solid; position: absolute; border-left: transparent 6px dashed; width: 0px; height: 0px; margin-left: -6px; font-size: 0px; overflow: hidden; border-top: transparent 6px dashed; top: -13px; border-right: transparent 6px dashed; left: 50%
+}
+.navbox .arrow_up_in {
+	border-bottom-color: #fff; border-top-color: transparent; border-right-color: transparent; border-left-color: transparent; top: -12px
+}
+#wdzh .arrow_up_in {
+	border-bottom-color: #fff; border-top-color: transparent; border-right-color: transparent; border-left-color: transparent; top: -12px
+}

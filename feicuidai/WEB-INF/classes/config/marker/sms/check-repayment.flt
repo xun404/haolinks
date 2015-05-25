@@ -1,0 +1,1 @@
+尊敬的${userName}客户，您投资的项目:${title}，第${periods}/${periodsCount}期还款成功！还款金额为${returnMoney}元。【翡翠贷】

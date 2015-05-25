@@ -1,0 +1,12 @@
+
+.centerbox{width:980px;padding:10px;background:#fff; margin:0px auto;color:#737272;}
+.centerbox span.mo{color: #fb4646;}
+.centerbox h1{font-weight:normal; line-height:2}
+.centerbox h2{font-size:16px;line-height:2}
+.centerbox h1 a{color:#4e91ec;font-size:12px;margin:10px 0 0 0}
+.centerbox p{width:840px; margin:0 auto; text-indent:2em;line-height:30px;font-size:14px;}
+.centerbox p.n{colro:#C00;text-indent:0;}
+.centerbox table{border:1px solid #dcdcdc; margin:0 auto; border-bottom:0}
+.centerbox table th{border-bottom:1px solid #dcdcdc;}
+.centerbox table td{border-bottom:1px solid #dcdcdc;border-right:1px solid #dcdcdc;}
+.centerbox table tr:hover{background:#f0f4f7}

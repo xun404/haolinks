@@ -1,0 +1,81 @@
+* {
+    font-family: "微软雅黑","Microsoft YaHei";
+    font-size: 12px;
+    list-style: outside none none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.w960px {
+    background: none repeat scroll 0 0 #fff;
+    height: auto;
+    margin: 0 auto;
+    width: 1003px;
+}
+
+.projectRightBox {
+    float: left;
+    height: auto;
+    width: 787px;
+}
+
+.pjRightCont {
+    height: auto;
+    width: 100%;
+}
+
+.jsqBox {
+    height: auto;
+    width: 100%;
+}
+
+.jsqBox h4 {
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    width: 100%;
+}
+
+.jsqBox p {
+    color: #a0a0a0;
+    display: block;
+    line-height: 1.8;
+    width: 100%;
+}
+
+.testBox {
+    border-top: 2px solid #c0c0c0;
+    height: auto;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.testBox span.prctItemTitle {
+    background: none repeat scroll 0 0 #73b500;
+    border-radius: 3px 0 0 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 37px;
+    line-height: 37px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 40px;
+    position: relative;
+    width: auto;
+}
+
+table.jsqTable {
+    color: #666666;
+    height: auto;
+    margin: 10px auto;
+    width: 100%;
+}
+

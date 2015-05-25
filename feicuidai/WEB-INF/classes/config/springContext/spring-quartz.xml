@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- 每个定义的任务都要在这里进行引用才能运行 -->
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <!-- <ref local="BusinessTestTrigger" />
+                <ref local="AutoRepeymentTrigger" />
+                <ref local="AutoAssignementTrigger" /> -->
+                <!--<ref local="AutoFailedBidTrigger"/>-->
+              
+				 <ref bean="autoBidTigger"/><!--启动定时器 -->
+            </list>
+        </property>
+    </bean>
+    
+        
+        <!-- 自动投标定时器 -->
+        <!-- 定时器类 -->
+        <bean id="loanAutomaticController" class="com.feicuidai.p2p.controller.LoanAutomaticController"></bean>
+	    <!-- 定时器配置 -->
+		<bean id="autoBidDitail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="loanAutomaticController"></property><!-- 指定任务类 -->
+		<property name="targetMethod" value="automaticBid"></property><!-- 指定任务方法 -->
+		</bean>
+		<!-- 定义时间间隔触发器 -->
+		<bean id="autoBidTigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="autoBidDitail"></property>
+		<property name="cronExpression">
+		<value>0 */5 * * * ?</value><!-- 0 */5 * * * ? 这里是五分钟-->
+		</property>
+		</bean>
+		
+		
+
+    <!-- 定义我们要运行的类，可以使用注入定制一些参数 -->
+    <bean id="failedBidManager" class="com.feicuidai.base.quartz.FailedBidQuartz"/>
+
+    <!-- 定义我们要运行的类，可以使用注入定制一些参数 -->
+    <!-- <bean id="blackIPManager" class="com.feicuidai.base.quartz.BlackIPQuartz" /> -->
+    <!--定义我们要运行的类，可以使用注入定制一些参数 -->
+    <!-- <bean id="autoRepayment" class="com.feicuidai.base.quartz.AutoRepaymentQuartz"></bean> -->
+    <!--定义我们要运行的类，可以使用注入定制一些参数 -->
+    <!-- <bean id="autoAssignement" class="com.feicuidai.base.quartz.AutoAssignementQuarz"></bean> -->
+
+    <!-- 引用，配置要运行的方法 -->
+    <bean id="failedBidDetail"
+          class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="failedBidManager"/>
+        </property>
+        <property name="concurrent" value="false"/>
+        <property name="targetMethod" value="run"/>
+    </bean>
+
+    <!-- 引用，配置要运行的方法 -->
+    <!-- <bean id="blackIPDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="blackIPManager" />
+        </property>
+        <property name="concurrent" value="false" />
+        <property name="targetMethod" value="run" />
+    </bean> -->
+    <!--引用，配置要运行的方法 -->
+    <!-- <bean id="autoRepaymentDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="autoRepayment" />
+        </property>
+        <property name="concurrent" value="false" />
+        <property name="targetMethod" value="run" />
+    </bean> -->
+    <!--引用，配置要运行的方法 -->
+    <!-- <bean id="autoAssignementDetail"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="autoAssignement" />
+        </property>
+        <property name="concurrent" value="false" />
+        <property name="targetMethod" value="run" />
+    </bean> -->
+
+    <!-- 引用，定制调用间隔 -->
+    <bean id="AutoFailedBidTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <ref bean="failedBidDetail"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 0 0 * * ?</value>
+        </property>
+    </bean>
+
+    <!-- <bean id="BusinessTestTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <ref bean="blackIPDetail" />
+        </property>
+        <property name="cronExpression">
+            <value>0 0 0 * * ?</value>
+        </property>
+    </bean>
+
+    <bean id="AutoRepeymentTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <ref bean="autoRepaymentDetail" />
+        </property>
+        <property name="cronExpression">
+            <value>0 0/30 0-12 * * ?</value>
+        </property>
+    </bean>
+
+    <bean id="AutoAssignementTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <ref bean="autoAssignementDetail" />
+        </property>
+        <property name="cronExpression">
+            <value>0 0/30 0-12 * * ?</value>
+        </property>
+    </bean> -->
+</beans>

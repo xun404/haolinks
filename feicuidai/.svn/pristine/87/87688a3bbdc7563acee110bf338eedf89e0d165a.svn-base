@@ -1,0 +1,803 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>翡翠贷-诚信为本</title>
+<style>
+.wylc0, .zqzr0 {
+	background-color: #f0f4f7;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="resources/css/new.css" />
+<link type="text/css" rel="stylesheet" href="resources/css/style.css" />
+<link type="text/css" rel="stylesheet" href="resources/css/other.css" />
+<link type="text/css" rel="stylesheet" href="resources/css/user.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/default.css" />
+<link rel="stylesheet" href="resources/css/base_index.css" />
+<link rel="stylesheet" href="resources/css/index_1.css" />
+<script type="text/javascript" src="resources/js/loanSign/loaninfo.js"></script>
+<jsp:include page="/WEB-INF/views/visitor/common.jsp"></jsp:include>
+<base href="<%=basePath%>" />
+<script>
+	function userGain() {
+		var gain = $('#userGain0');
+		setTimeout(function() {
+			gain.animate({
+				height : 270,
+				"margin-top" : 40
+			}, 800).animate({
+				"margin-top" : 30
+			}, 800);
+		}, 500);
+	};
+	$(function() {
+		userGain();
+	});
+</script>
+</head>
+<body>
+	<div class="doc doc-711-234" style="background-color: #f3f3f3;">
+		<!-- top -->
+		<jsp:include page="/WEB-INF/views/visitor/communal/head.jsp" />
+		<div class="slider" style="height: 330px;">
+			<ul id="indexSlide" class="slider-img indexSlide indexSlide1">
+				<c:forEach items="${application_banner}" var="v" varStatus="vs">
+					<li
+						style="background-image: url(${v.imgurl}); background-position:center "
+						id="indexSlide1_s${vs.index }"><c:if test="${empty v.url}">
+							<a href="javascript:void(0)"> </a>
+						</c:if> <c:if test="${!empty v.url}">
+							<a href="${v.url }"></a>
+						</c:if></li>
+				</c:forEach>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<script src="/resources/js/common.js"></script>
+		<script src="/resources/js/index.js"></script>
+		<script>
+			$(function() {
+				itz.index.init();
+			});
+		</script>
+		<div class="appointment_box">
+			<div class="appointent">
+				<div class="guyingbao">
+					<span>每周一至周五上午十点发售</span>
+				</div>
+				<div class="Profit">
+					<div class="tree">
+						<div class="title">
+							预期年化收益率 <span>12%-18%</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>最低<samp>50元</samp>可加入
+								</li>
+								<li><samp>标的</samp>循环出借</li>
+								<li>合约期限<samp>1-12</samp>个月
+								</li>
+								<div class="c"></div>
+							</ul>
+						</div>
+					</div>
+					<div class="appointment">
+						<a href="/loaninfo/openLoan.htm">即将预约</a>
+					</div>
+					<div class="c"></div>
+				</div>
+			</div>
+		</div>
+
+<!-- QQ代码 开始 -->
+<style type="text/css">
+#online_qq_tab a,.onlineMenu h3,.onlineMenu li.tli,.newpage{ background:url(resources/images/update/float_bg.png) no-repeat;}
+ 
+#onlineService{background:url(resources/images/update/top.png) no-repeat;background-position:-5px 0px;}
+.onlineMenu{background:url(resources/images/update/mid.png) no-repeat;background-position:-5px 0px;}
+.btmbg{background:url(resources/images/update/bottom.png) no-repeat;background-position:-5px 0px;}
+
+#online_qq_layer{z-index:9999;position:fixed;right:0px;top:0;margin:200px 0 0 0;}
+*html #online_qq_layer{position:absolute;top:expression(eval(document.documentElement.scrollTop));}
+
+#online_qq_tab{width:32px;float:left;margin:60px 0 0 0;position:relative;z-index:9;}
+#online_qq_tab a{display:block;height:118px;line-height:999em;overflow:hidden;}
+#online_qq_tab a#floatShow{background:url(resources/images/update/close.png) no-repeat;}
+#online_qq_tab a#floatHide{background:url(resources/images/update/open.png) no-repeat;}
+
+#onlineService{display:inline;margin-left:-1px;float:left;width:135px;display:none;padding:10px 0 0 0;}
+.onlineMenu{background-repeat:repeat-y;padding:10px 10px;}
+.onlineMenu h3{height:40px;line-height:999em;overflow:hidden;}
+.onlineMenu h3.tQQ{background-position:-26px -19px;}
+.onlineMenu h3.tele{background-position:-21px -121px;height: 105px;}
+.onlineMenu li{height:36px;line-height:36px;text-align:center;}
+.onlineMenu li.tli{padding:0 0 0 28px;font-size:12px;text-align:left;}
+.onlineMenu li.zixun{background-position:0px -131px;}
+.onlineMenu li.fufei{background-position:0px -190px;}
+.onlineMenu li.phone{background-position:0px -244px;padding-left: 16px;}
+.onlineMenu li a.newpage{display:block;height:36px;line-height:999em;overflow:hidden;background-position:5px -100px;}
+.onlineMenu li img{margin:8px 0 0 0;}
+.onlineMenu li.last{border:0;}
+.btmbg{height:12px;overflow:hidden;}
+
+</style>
+
+<!-- 代码 开始 -->
+<div id="online_qq_layer">
+	<div id="online_qq_tab">
+		<a id="floatShow" style="display:block" href="javascript:void(0);">收缩</a> 
+		<a id="floatHide" style="display:none" href="javascript:void(0);">展开</a>
+	</div>
+	<div style="display: none;" id="onlineService">
+		<div class="onlineMenu">
+			<h3 class="tQQ">QQ在线客服</h3>
+			<ul>				
+				<li>
+                    <a target=blank href="http://wpa.qq.com/msgrd?V=1&Uin=1352584545&Site=翡翠贷客服&Menu=yes">
+                    <img border="0" src="resources/images/update/btn-qq.gif.jpg" width="79" height="25" title="点击这里给我发消息" >
+                    </a>
+				</li>
+				<li>
+               <a target=blank href=http://wpa.qq.com/msgrd?V=1&Uin=11111111&Site=翡翠贷客服&Menu=yes>
+                     <img border="0" src="resources/images/update/btn-qq.gif.jpg"  alt="点击这里给我发消息">
+               </a>
+				</li>
+				
+			</ul>
+			<h3 class="tele">电话客服</h3>
+
+		</div>
+	
+		
+		<div class="btmbg"></div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("#floatShow").bind("click",function(){
+	
+		$("#onlineService").animate({width:"show", opacity:"show"}, "normal" ,function(){
+			$("#onlineService").show();
+		});
+		
+		$("#floatShow").attr("style","display:none");
+		$("#floatHide").attr("style","display:block");
+		
+		return false;
+	});
+	
+	$("#floatHide").bind("click",function(){
+	
+		$("#onlineService").animate({width:"hide", opacity:"hide"}, "normal" ,function(){
+			$("#onlineService").hide();
+		});
+		
+		$("#floatShow").attr("style","display:block");
+		$("#floatHide").attr("style","display:none");
+		
+		return false;
+	});
+  
+});
+</script>
+<!-- QQ代码 结束 -->
+
+		<div class="main">
+			<div class="left_area">
+				<div class="whole">
+					<div class="title">
+						<div class="title_itm">
+							<div class="icon icon_1">楼市宝</div>
+							<div class="icon_a">房产足值抵押 | 六重安全保障 | 100%保本利息</div>
+							<div class="c"></div>
+						</div>
+						<div class="more">
+							<a href="/loaninfo/openLoan.htm?loansignType=1">更多 ></a>
+						</div>
+						<div class="c"></div>
+					</div>
+					<div class="time_box">
+						<div class="time">
+							正在努力审核项目，每日项目发布时间为 <span class="time_span">[10：00] [13：00]
+								[16：00] [20：00]</span>
+						</div>
+					</div>
+					<c:if test="${fn:length(loanlist1) <= 0 }">
+						<a href="/loaninfo/openLoan.htm" class="chick_more">查看更多投资理财项目</a>
+					</c:if>
+					<c:forEach items="${loanlist1}" var="loanList" end="5"
+						varStatus="stat">
+						<div class="loan_box">
+							<div class="loan">
+								<div class="loan_left">
+									<div class="left_s">
+										<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}">${loanList[1]}</a>
+									</div>
+									<div class="left_x">
+										年利率：
+										<samp>${fn:substring(loanList[3]*100,0,fn:indexOf(loanList[3]*100,".")+3)}&nbsp;%</samp>
+										借款期限：
+										<samp>${loanList[4]}个月</samp>
+									</div>
+								</div>
+								<div class="loan_right">
+									<div class="right_s">
+										<div class="DataLoadding">
+											<span
+												data-value="${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,'.')+2)}"
+												class="">
+                                            	<b></b>
+											</span>
+											完成进度${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,".")+2)}%
+										</div>
+									</div>
+									<div class="right_x">
+										借款金额：
+										<samp>${fn:substring(loanList[2],0,fn:indexOf(loanList[2],".")+3)}元</samp>
+									</div>
+								</div>
+								<div class="result">
+								<c:if test="${loanList[12]==2 && loanList[13]!=1}">
+									<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}" class="bid">投标</a>
+									</c:if> <c:if test="${loanList[12]==3}">
+									<a class="repayment">还款中</a>
+									</c:if> <c:if test="${loanList[12]== 4 }">
+									<a class="completed">已完成</a>
+									</c:if> <c:if test="${loanList[12]==2 && loanList[13]==1}">
+									<a class="full">已满标</a>
+									</c:if>
+								</div>
+								<div class="c"></div>
+							</div>
+						</div>
+					</c:forEach>
+				</div>
+				<div class="whole">
+					<div class="title">
+						<div class="title_itm">
+							<div class="icon icon_2">汽车宝</div>
+							<div class="icon_a">抵押过户 | 汽车在手 | 安全无忧 | 100%本息保障</div>
+							<div class="c"></div>
+						</div>
+						<div class="more">
+							<a href="/loaninfo/openLoan.htm?loansignType=2">更多 ></a>
+						</div>
+						<div class="c"></div>
+					</div>
+					<div class="time_box">
+						<div class="time">
+							正在努力审核项目，每日项目发布时间为 <span class="time_span">[10：00] [13：00]
+								[16：00] [20：00]</span>
+						</div>
+					</div>
+					<c:if test="${fn:length(loanlist2) <= 0 }">
+						<a href="/loaninfo/openLoan.htm" class="chick_more">查看更多投资理财项目</a>
+					</c:if>
+					<c:forEach items="${loanlist2}" var="loanList" end="5"
+						varStatus="stat">
+						<div class="loan_box">
+							<div class="loan">
+								<div class="loan_left">
+									<div class="left_s">
+										<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}">${loanList[1]}</a>
+									</div>
+									<div class="left_x">
+										年利率：
+										<samp>${fn:substring(loanList[3]*100,0,fn:indexOf(loanList[3]*100,".")+3)}&nbsp;%</samp>
+										借款期限：
+										<samp>${loanList[4]}个月</samp>
+									</div>
+								</div>
+								<div class="loan_right">
+									<div class="right_s">
+										<div class="DataLoadding">
+											<span
+												data-value="${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,'.')+2)}"
+												class="">
+                                            	<b></b>
+											</span>
+											完成进度${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,".")+2)}%
+										</div>
+									</div>
+									<div class="right_x">
+										借款金额：
+										<samp>${fn:substring(loanList[2],0,fn:indexOf(loanList[2],".")+3)}元</samp>
+									</div>
+								</div>
+								<div class="result">
+									<c:if test="${loanList[12]==2 && loanList[13]!=1}">
+									<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}" class="bid">投标</a>
+									</c:if> <c:if test="${loanList[12]==3}">
+									<a class="repayment">还款中</a>
+									</c:if> <c:if test="${loanList[12]==4}">
+									<a class="completed">已完成</a>
+									</c:if> <c:if test="${loanList[12]==2 && loanList[13]==1}">
+									<a class="full">已满标</a>
+									</c:if>
+								</div>
+								<div class="c"></div>
+							</div>
+						</div>
+					</c:forEach>
+				</div>
+				<div class="whole">
+					<div class="title">
+						<div class="title_itm">
+							<div class="icon icon_3">典当宝</div>
+							<div class="icon_a">特许经营 | 持牌放贷 | 存量盘活 | 100%权益保障</div>
+							<div class="c"></div>
+						</div>
+						<div class="more">
+							<a href="/loaninfo/openLoan.htm?loansignType=8">更多 ></a>
+						</div>
+						<div class="c"></div>
+					</div>
+					<div class="time_box">
+						<div class="time">
+							正在努力审核项目，每日项目发布时间为 <span class="time_span">[10：00] [13：00]
+								[16：00] [20：00]</span>
+						</div>
+					</div>
+					<c:if test="${fn:length(loanlist8) <= 0 }">
+						<a href="/loaninfo/openLoan.htm" class="chick_more">查看更多投资理财项目</a>
+					</c:if>
+					<c:forEach items="${loanlist8}" var="loanList" end="5"
+						varStatus="stat">
+						<div class="loan_box">
+							<div class="loan">
+								<div class="loan_left">
+									<div class="left_s">
+										<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}">${loanList[1]}</a>
+									</div>
+									<div class="left_x">
+										年利率：
+										<samp>${fn:substring(loanList[3]*100,0,fn:indexOf(loanList[3]*100,".")+3)}&nbsp;%</samp>
+										借款期限：
+										<samp>${loanList[4]}个月</samp>
+									</div>
+								</div>
+								<div class="loan_right">
+									<div class="right_s">
+										<div class="DataLoadding">
+											<span
+												data-value="${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,'.')+2)}"
+												class="">
+                                            	<b></b>
+											</span>
+											完成进度${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,".")+2)}%
+										</div>
+									</div>
+									<div class="right_x">
+										借款金额：
+										<samp>${fn:substring(loanList[2],0,fn:indexOf(loanList[2],".")+3)}元</samp>
+									</div>
+								</div>
+								<div class="result">
+									<c:if test="${loanList[12]==2 && loanList[13]!=1}">
+									<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}" class="bid">投标</a>
+									</c:if> <c:if test="${loanList[12]==3}">
+									<a class="repayment">还款中</a>
+									</c:if> <c:if test="${loanList[12]==4}">
+									<a class="completed">已完成</a>
+									</c:if> <c:if test="${loanList[12]==2 && loanList[13]==1}">
+									<a class="full">已满标</a>
+									</c:if>
+								</div>
+								<div class="c"></div>
+							</div>
+						</div>
+					</c:forEach>
+				</div>
+				<div class="whole">
+					<div class="title">
+						<div class="title_itm">
+							<div class="icon icon_4">供链宝</div>
+							<div class="icon_a">特许经营 | 持牌放贷 | 存量盘活 | 100%权益保障</div>
+							<div class="c"></div>
+						</div>
+						<div class="more">
+							<a href="/loaninfo/openLoan.htm?loansignType=9">更多 ></a>
+						</div>
+						<div class="c"></div>
+					</div>
+                    
+					<div class="time_box">
+						<div class="time">
+							正在努力审核项目，每日项目发布时间为 <span class="time_span">[10：00] [13：00]
+								[16：00] [20：00]</span>
+						</div>
+					</div>                    
+					<c:if test="${fn:length(loanlist9) <= 0 }">
+						<a href="/loaninfo/openLoan.htm" class="chick_more">查看更多投资理财项目</a>
+					</c:if>
+
+
+					<c:forEach items="${loanlist9}" var="loanList" end="5"
+						varStatus="stat">
+						<div class="loan_box">
+							<div class="loan">
+								<div class="loan_left">
+									<div class="left_s">
+										<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}">${loanList[1]}</a>
+									</div>
+									<div class="left_x">
+										年利率：
+										<samp>${fn:substring(loanList[3]*100,0,fn:indexOf(loanList[3]*100,".")+3)}&nbsp;%</samp>
+										借款期限：
+										<samp>${loanList[4]}个月</samp>
+									</div>
+								</div>
+								<div class="loan_right">
+									<div class="right_s">
+										<div class="DataLoadding">
+											<span
+												data-value="${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,'.')+2)}"
+												class="">
+                                            	<b></b>
+											</span>
+											完成进度${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,".")+2)}%
+										</div>
+									</div>
+									<div class="right_x">
+										借款金额：
+										<samp>${fn:substring(loanList[2],0,fn:indexOf(loanList[2],".")+3)}元</samp>
+									</div>
+								</div>
+								<div class="result">
+									<c:if test="${loanList[12]==2 && loanList[13]!=1}">
+									<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}" class="bid">投标</a>
+									</c:if> <c:if test="${loanList[12]==3}">
+									<a class="repayment">还款中</a>
+									</c:if> <c:if test="${loanList[12]==4}">
+									<a class="completed">已完成</a>
+									</c:if> <c:if test="${loanList[12]==2 && loanList[13]==1}">
+									<a class="full">已满标</a>
+									</c:if>
+								</div>
+								<div class="c"></div>
+							</div>
+						</div>
+					</c:forEach>
+				</div>
+				<div class="whole">
+					<div class="title">
+						<div class="title_itm">
+							<div class="icon icon_5">保理宝</div>
+							<div class="icon_a">房产足值抵押 | 六重安全保障 | 100%保本利息</div>
+							<div class="c"></div>
+						</div>
+						<div class="more">
+							<a href="/loaninfo/openLoan.htm?loansignType=10">更多 ></a>
+						</div>
+						<div class="c"></div>
+					</div>
+					<div class="time_box">
+						<div class="time">
+							正在努力审核项目，每日项目发布时间为 <span class="time_span">[10：00] [13：00]
+								[16：00] [20：00]</span>
+						</div>
+					</div>                    
+					<c:if test="${fn:length(loanlist10) <= 0 }">
+						<a href="/loaninfo/openLoan.htm" class="chick_more">查看更多投资理财项目</a>
+					</c:if>
+
+
+					<c:forEach items="${loanlist10}" var="loanList" end="5"
+						varStatus="stat">
+						<div class="loan_box">
+							<div class="loan">
+								<div class="loan_left">
+									<div class="left_s">
+										<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}">${loanList[1]}</a>
+									</div>
+									<div class="left_x">
+										年利率：
+										<samp>${fn:substring(loanList[3]*100,0,fn:indexOf(loanList[3]*100,".")+3)}&nbsp;%</samp>
+										借款期限：
+										<samp>${loanList[4]}个月</samp>
+									</div>
+								</div>
+								<div class="loan_right">
+									<div class="right_s">
+										<div class="DataLoadding">
+											<span
+												data-value="${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,'.')+2)}"
+												class="">
+                                            	<b></b>
+											</span>
+											完成进度${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,".")+2)}%
+										</div>
+									</div>
+									<div class="right_x">
+										借款金额：
+										<samp>${fn:substring(loanList[2],0,fn:indexOf(loanList[2],".")+3)}元</samp>
+									</div>
+								</div>
+								<div class="result">
+									<c:if test="${loanList[12]==2 && loanList[13]!=1}">
+									<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}" class="bid">投标</a>
+									</c:if> <c:if test="${loanList[12]==3}">
+									<a class="repayment">还款中</a>
+									</c:if> <c:if test="${loanList[12]==4}">
+									<a class="completed">已完成</a>
+									</c:if> <c:if test="${loanList[12]==2 && loanList[13]==1}">
+									<a class="full">已满标</a>
+									</c:if>
+								</div>
+								<div class="c"></div>
+							</div>
+						</div>
+					</c:forEach>
+				</div>
+				<div class="whole">
+					<div class="title">
+						<div class="title_itm">
+							<div class="icon icon_6">流转宝</div>
+							<div class="icon_a">特许经营 | 持牌放贷 | 存量盘活 | 100%权益保障</div>
+							<div class="c"></div>
+						</div>
+						<div class="more">
+							<a href="/loaninfo/openLoan.htm?loansignType=11">更多 ></a>
+						</div>
+						<div class="c"></div>
+					</div>
+
+					<div class="time_box">
+						<div class="time">
+							正在努力审核项目，每日项目发布时间为 <span class="time_span">[10：00] [13：00]
+								[16：00] [20：00]</span>
+						</div>
+					</div>                    
+					<c:if test="${fn:length(loanlist11) <= 0 }">
+						<a href="/loaninfo/openLoan.htm" class="chick_more">查看更多投资理财项目</a>
+					</c:if>
+
+					<c:forEach items="${loanlist11}" var="loanList" end="5"
+						varStatus="stat">
+						<div class="loan_box">
+							<div class="loan">
+								<div class="loan_left">
+									<div class="left_s">
+										<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}">${loanList[1]}</a>
+									</div>
+									<div class="left_x">
+										年利率：
+										<samp>${fn:substring(loanList[3]*100,0,fn:indexOf(loanList[3]*100,".")+3)}&nbsp;%</samp>
+										借款期限：
+										<samp>${loanList[4]}个月</samp>
+									</div>
+								</div>
+								<div class="loan_right">
+									<div class="right_s">
+										<div class="DataLoadding">
+											<span
+												data-value="${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,'.')+2)}"
+												class="">
+                                            	<b></b>
+											</span>
+											完成进度${fn:substring(loanList[13]*100,0,fn:indexOf(loanList[13]*100,".")+2)}%
+										</div>
+									</div>
+									<div class="right_x">
+										借款金额：
+										<samp>${fn:substring(loanList[2],0,fn:indexOf(loanList[2],".")+3)}元</samp>
+									</div>
+								</div>
+								<div class="result">
+									<c:if test="${loanList[12]==2 && loanList[13]!=1}">
+									<a href="/loaninfo/getLoanInfo.htm?id=${loanList[0]}" class="bid">投标</a>
+									</c:if> <c:if test="${loanList[12]==3}">
+									<a class="repayment">还款中</a>
+									</c:if> <c:if test="${loanList[12]==4}">
+									<a class="completed">已完成</a>
+									</c:if> <c:if test="${loanList[12]==2 && loanList[13]==1}">
+									<a class="full">已满标</a>
+									</c:if>
+								</div>
+								<div class="c"></div>
+							</div>
+						</div>
+					</c:forEach>
+				</div>
+			</div>
+			<div class="right_area">
+				<c:forEach items="${appDeputys}" var="d">
+					<c:if test="${d.name eq '官方公告' }">
+						<div class="list_box">
+							<h3>
+								<div class="h3_left left_01">${d.name}</div>
+								<div class="h3_right">
+									<a href="${d.url}">更多</a>
+								</div>
+								<div class="c"></div>
+							</h3>
+							<ul>
+								<hr />
+								<div class="advertisement">
+									<a href="#" target="_blank"><img
+										src="/resources/images/update/adver_0.png" width="260"
+										height="82" title="行业动态" /></a>
+								</div>
+								<c:set var="n" value="0" />
+								<c:forEach items="${appArticles}" var="itemTmp">
+									<c:if test="${itemTmp.deputysection.id  == d.id }">
+										<c:if test="${n < 8}">
+											<li><a href="${itemTmp.url}">${itemTmp.title}</a></li>
+										</c:if>
+										<c:set var="n" value="${n+1 }" />
+									</c:if>
+								</c:forEach>
+							</ul>
+						</div>
+					</c:if>
+				</c:forEach>
+				<c:forEach items="${appDeputys}" var="d">
+					<c:if test="${d.name eq '行业动态' }">
+						<div class="list_box">
+							<h3>
+								<div class="h3_left left_02">${d.name}</div>
+								<div class="h3_right">
+									<a href="${d.url}">更多</a>
+								</div>
+								<div class="c"></div>
+							</h3>
+							<ul>
+								<hr />
+								<div class="advertisement">
+									<a href="#" target="_blank"><img
+										src="/resources/images/update/adver_1.jpg" width="260"
+										height="82" title="行业动态" /></a>
+								</div>
+								<c:set var="n" value="0" />
+								<c:forEach items="${appArticles}" var="itemTmp">
+									<c:if test="${itemTmp.deputysection.id  == d.id }">
+										<c:if test="${n < 8}">
+											<li><a href="${itemTmp.url}">${itemTmp.title}</a></li>
+										</c:if>
+									</c:if>
+								</c:forEach>
+							</ul>
+						</div>
+					</c:if>
+				</c:forEach>
+				<c:forEach items="${appDeputys}" var="d">
+					<c:if test="${d.name eq '媒体报道' }">
+						<div class="list_box">
+							<h3>
+								<div class="h3_left left_03">${d.name}</div>
+								<div class="h3_right">
+									<a href="${d.url}">更多</a>
+								</div>
+								<div class="c"></div>
+							</h3>
+							<ul>
+								<hr />
+								<div class="advertisement">
+									<a href="#" target="_blank"><img
+										src="/resources/images/update/vido_2.jpg" width="260"
+										height="82" title="媒体报道" /></a>
+								</div>
+								<c:set var="n" value="0" />
+								<c:forEach items="${appArticles}" var="itemTmp">
+									<c:if test="${itemTmp.deputysection.id  == d.id }">
+										<c:if test="${n < 8}">
+											<li><a href="${itemTmp.url}">${itemTmp.title}</a></li>
+										</c:if>
+									</c:if>
+								</c:forEach>
+							</ul>
+						</div>
+					</c:if>
+				</c:forEach>
+				<c:forEach items="${appDeputys}" var="d">
+					<c:if test="${d.name eq '理财方案' }">
+						<div class="list_box">
+							<h3>
+								<div class="h3_left left_04">${d.name}</div>
+								<div class="h3_right">
+									<a href="${d.url}">更多</a>
+								</div>
+								<div class="c"></div>
+							</h3>
+							<ul>
+								<hr />
+								<div class="advertisement">
+									<a href="#" target="_blank"><img
+										src="/resources/images/update/adver_4.jpg" width="260"
+										height="82" title="理财方案" /></a>
+								</div>
+								<c:set var="n" value="0" />
+								<c:forEach items="${appArticles}" var="itemTmp">
+									<c:if test="${itemTmp.deputysection.id  == d.id }">
+										<c:if test="${n < 8}">
+											<li><a href="${itemTmp.url}">${itemTmp.title}</a></li>
+										</c:if>
+									</c:if>
+								</c:forEach>
+							</ul>
+						</div>
+					</c:if>
+				</c:forEach>
+			</div>
+		</div>
+	</div>
+
+	<!-- 合作伙伴 -->
+	<div class="hezuo" style="margin-bottom: 30px">
+		<table>
+			<tr>
+				<td align="right" style=" position:relative;">
+                <font class="partner" ></font>
+                </td>
+				<td align="left"><div class="move" id="demo">
+						<table>
+							<tr>
+								<td id="item1">
+									<table>
+										<tr>
+											<c:forEach items="${application_link}" var="link">
+												<c:if test="${link.type eq 1 && link.isShow eq 1 }">
+													<td><a href="${link.url }" target="_blank"><img
+															style="height: 40px;" src="${link.verifyImg }"
+															alt="${link.name }"></img> </a></td>
+												</c:if>
+											</c:forEach>
+										</tr>
+									</table>
+								</td>
+								<td id="item2"></td>
+								<td id="item3"></td>
+							</tr>
+						</table>
+					</div></td>
+			</tr>
+		</table>
+
+		<script language="javascript" type="text/javascript">
+			var demo = document.getElementById("demo");
+			var demo1 = document.getElementById("item1");
+			var demo2 = document.getElementById("item2");
+			var demo3 = document.getElementById("item3");
+			var speed = 20; //数值越大滚动速度越慢
+			demo2.innerHTML = demo1.innerHTML;
+			demo3.innerHTML = demo1.innerHTML;
+			function Marquee() {
+				if (demo3.offsetWidth - demo.scrollLeft <= 0)
+					demo.scrollLeft -= demo1.offsetWidth;
+				else {
+					demo.scrollLeft++;
+				}
+			}
+			var MyMar = setInterval(Marquee, speed);
+			demo.onmouseover = function() {
+				clearInterval(MyMar);
+			};
+			demo.onmouseout = function() {
+				MyMar = setInterval(Marquee, speed);
+			};
+		</script>
+		<div class="clear"></div>
+	</div>
+
+	<%@ include file="/WEB-INF/views/visitor/footer.jsp"%>
+	
+	
+	
+	
+</body>
+</html>

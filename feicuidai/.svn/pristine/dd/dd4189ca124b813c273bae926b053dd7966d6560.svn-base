@@ -1,0 +1,79 @@
+<%@ page language="java" pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
+    <meta http-equiv="description" content="This is my page"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript"
+            src="/resource/js/jquery/jquery-1.8.0.min.js"></script>
+    <link href="/resource/phone/css/public.css" type="text/css" rel="stylesheet"/>
+    <link href="/resource/phone/css/index.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/resource/phone/ymPrompt/simple_gray/ymPrompt.css"/>
+    <script type="text/javascript" src="/resources/js/ymPrompt.js"></script>
+    <title>翡翠贷-登陆</title>
+    <script>
+        function checkLogin() {
+            if ($("#loginName").val() == "") {
+                ymPrompt.alert("请输入用户名", 250, 200, "提示", null);
+                document.getElementById("loginName").focus();
+                return false;
+            } else if ($("#loginPwd").val() == "") {
+                ymPrompt.alert("请输入密码", 250, 200, "提示", null);
+                document.getElementById("loginPwd").focus();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="main">
+
+
+    <!--内容 Start-->
+
+    <div class="logo">
+    </div>
+
+    <form id="loginForm" action="/phoneVisitor/login" method="post" onsubmit="return checkLogin();">
+        <div class="input_box">
+            <input type="text" name="userName" id="loginName"
+                   value="${userName}" placeholder="用户名/手机号"
+                   class="input_style username"/>
+        </div>
+        <div class="input_box">
+            <input type="password" name="pwd" id="loginPwd" value="${pwd}"
+                   placeholder="密码" class="input_style password"/>
+        </div>
+        <input type="submit" id="loginEnter" value="登录" class="button_style"/>
+        <a href="/phoneVisitor/registView" class="button_style background_none">注册</a>
+        <script>
+            <c:if test="${!empty user_error}">
+            ymPrompt.alert("${user_error }", 250, 200, '提示', null);
+            </c:if> <c:if test="${msg eq 1}">
+            ymPrompt.alert("验证码错误", 250, 200, '提示', null);
+            </c:if> <c:if test="${error gt 0 && error lt 5}">
+            ymPrompt.alert("密码错误，还有${5-error}次机会。", 250, 200, '提示', null);
+            </c:if> <c:if test="${!empty isLock }">
+            ymPrompt.alert("对不起你的账号在${isLock}已经锁定。", 250, 200, '提示', null);
+            </c:if> <c:if test="${!empty lock }">
+            ymPrompt.alert("${lock}", 250, 200, '提示', null);
+            </c:if> <c:if test="${!empty admin_lock }">
+            ymPrompt.alert("${admin_lock}", 250, 200, '提示', null);
+            </c:if>
+        </script>
+    </form>
+    <!--内容 End-->
+
+</div>
+<jsp:include page="/WEB-INF/views/phone/public/footer.jsp"/>
+</body>
+</html>
